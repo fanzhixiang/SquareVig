@@ -36,7 +36,7 @@ always@(posedge clk)        //closeEdge
                 1'b0: begin
                     up = up;
                     low = g;
-                    g = ((up + g) >> 1);
+                    g = ((up + low) >> 1);
                     sqrt = g;
                 end
             endcase
@@ -47,7 +47,7 @@ always@(posedge clk)        //closeEdge
                 1'b0: begin
                     up = g;
                     low = low;
-                    g = ((up + g) >> 1);
+                    g = ((up + low) >> 1);
                     sqrt = g;
                 end
             endcase
