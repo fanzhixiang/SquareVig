@@ -1,0 +1,15 @@
+{
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "daisy.ee.nthu.edu.tw",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "transport": "scp",
+  "port": "22",
+  "target": "./SquareVig",
+  "username": "m103061608",
+  "password": "abcd5818033"
+}

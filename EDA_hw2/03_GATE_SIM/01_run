@@ -1,0 +1,1 @@
+ncverilog testbench.v square_root_finder_syn.v +define+GATE -v /home/m103/m103061604/EDA_hw2/tsmc18.v +access+r
