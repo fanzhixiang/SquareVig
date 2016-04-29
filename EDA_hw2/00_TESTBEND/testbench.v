@@ -1,24 +1,23 @@
-`timescale 50ns/1ps
+`timescale 10ns/1ps
 `define CLK 10
 
 module testbench;
 
 reg clk ,rst;
 reg  [15:0]in;
-wire [15:0]sqrt;
+wire [31:0]sqrt;
 
 square_root_finder square_root_finder1(.clk(clk), .rst(rst), .in(in), .sqrt(sqrt));
 
 always begin #(`CLK/2) clk = ~ clk; end
     initial begin
-    clk = 1'b1;
+    clk = 1'b0;
     rst = 1'b0;
-    in = 16'd00;
-    // up = in;
-    // low = 19'd00;
-    // g = 19'd03072;
-    #20 in = 16'd4;
-    #20 rst = 1'b1;
+    in =  16'd0;
+    #10 in = 16'd3; rst = 1'b1;
+    #10 rst = 1'b0;
+
+
 
 
     `ifdef RTL
@@ -30,6 +29,6 @@ always begin #(`CLK/2) clk = ~ clk; end
         $fsdbDumpfile("square_root_finder_syn.fsdb");
         $fsdbDumpvars;
 	    `endif
-    # 300 $finish;
+    # 1000 $finish;
   end
 endmodule

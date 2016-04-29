@@ -8,7 +8,7 @@ current_design [get_designs $DESIGN]
 set_operating_conditions -min fast -max slow
 
 #----------define your clock signal and period here----------------#
-create_clock -period 50.0 [ get_ports clk ]
+create_clock -period 30.0 [ get_ports clk ]
 
 link
 

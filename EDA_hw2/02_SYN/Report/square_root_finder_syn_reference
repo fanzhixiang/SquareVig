@@ -1,0 +1,39 @@
+ 
+****************************************
+Report : reference
+Design : square_root_finder
+Version: D-2010.03-SP5
+Date   : Fri Apr 29 01:11:09 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             slow          13.305600      15    199.584002  
+AND2X2             slow          13.305600      33    439.084805  
+DFFHQX1            slow          53.222401      48   2554.675232  n
+INVX1              slow           6.652800      18    119.750401  
+NAND2X1            slow           9.979200       1      9.979200  
+NAND3X1            slow          13.305600       1     13.305600  
+NAND4X1            slow          16.632000       1     16.632000  
+NOR3X1             slow          13.305600       1     13.305600  
+NOR4BX1            slow          19.958401       1     19.958401  
+NOR4X1             slow          19.958401       6    119.750404  
+OAI22X1            slow          19.958401       1     19.958401  
+OR2X2              slow          13.305600       2     26.611200  
+OR3XL              slow          16.632000       6     99.792000  
+OR4X2              slow          19.958401       1     19.958401  
+XOR2X1             slow          26.611200      15    399.168005  
+-----------------------------------------------------------------------------
+Total 15 references                                  4071.513654
+1

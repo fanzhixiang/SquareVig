@@ -1,0 +1,17 @@
+ncverilog: 11.10-s072: (c) Copyright 1995-2013 Cadence Design Systems, Inc.
+TOOL:	ncverilog	11.10-s072: Started on Apr 29, 2016 at 01:12:27 CST
+ncverilog
+	testbench.v
+	square_root_finder_syn.v
+	+define+GATE
+	-v
+	/home/m103/m103061604/EDA_hw2/tsmc18.v
+	+access+r
+file: testbench.v
+`timescale 50ns/1ps
+            |
+ncvlog: *E,TMSER6 (testbench.v,1|12): illegal <time_unit> integer value. Not one of 1, 10, or 100 [19.8(IEEE Std 1364-2005)].
+	Total errors/warnings found outside modules and primitives:
+		errors: 1, warnings: 0
+ncverilog: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	ncverilog	11.10-s072: Exiting on Apr 29, 2016 at 01:12:27 CST  (total: 00:00:00)

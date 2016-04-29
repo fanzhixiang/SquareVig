@@ -1,0 +1,52 @@
+ncverilog: 11.10-s072: (c) Copyright 1995-2013 Cadence Design Systems, Inc.
+TOOL:	ncverilog	11.10-s072: Started on Apr 29, 2016 at 00:55:37 CST
+ncverilog
+	./testbench.v
+	./square_root_finder.v
+	+define+RTL
+	+access+rw
+Recompiling... reason: file './square_root_finder.v' is newer than expected.
+	expected: Fri Apr 29 00:46:33 2016
+	actual:   Fri Apr 29 00:53:16 2016
+file: ./square_root_finder.v
+	module worklib.square_root_finder:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.square_root_finder:v <0x08a3a684>
+			streams:   7, words:  1759
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:               9       9
+		Scalar wires:            2       -
+		Vectored wires:          2       -
+		Always blocks:           4       4
+		Initial blocks:          1       1
+		Pseudo assignments:      3       3
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.testbench:v
+Loading snapshot worklib.testbench:v .................... Done
+*Novas* Loading libsscore_ius111.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+Novas FSDB Dumper for IUS, Release 2012.01, Linux, 01/13/2012
+Copyright (C) 1996 - 2012 by SpringSoft, Inc.
+***********************************************************************
+*  WARNING -                                                          *
+*  The FSDB dumper support is still in beta stage for the simulator   *
+*  version that you are running. For any abnormal behavior, please    *
+*  contact SpringSoft support at support@springsoft.com for           *
+*  assistance.                                                        *
+***********************************************************************
+*Novas* : Create FSDB file 'square_root_finder.fsdb'
+*Novas* : Begin traversing the scopes, layer (0).
+*Novas* : End of traversing.
+Simulation complete via $finish(1) at time 1010 NS + 0
+./testbench.v:31     # 1000 $finish;
+ncsim> exit
+TOOL:	ncverilog	11.10-s072: Exiting on Apr 29, 2016 at 00:56:05 CST  (total: 00:00:28)

@@ -1,0 +1,39 @@
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : area
+Design : square_root_finder
+Version: D-2010.03-SP5
+Date   : Fri Apr 29 01:11:08 2016
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    slow (File: /home/m103/m103061604/EDA_hw2/db/slow.db)
+
+Number of ports:               50
+Number of nets:               168
+Number of cells:              150
+Number of references:          15
+
+Combinational area:       1516.838422
+Noncombinational area:    2554.675232
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          4071.513654
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+square_root_finder                4071.5122    100.0  1516.8364  2554.6755  0.0000  square_root_finder
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+Total                                                 1516.8364  2554.6755  0.0000
+
+1
