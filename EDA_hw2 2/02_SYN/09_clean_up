@@ -1,7 +1,0 @@
-rm -rf *.log
-rm -rf *~
-rm -rf ./Netlist/*
-rm -rf ./Report/*
-rm -rf *.svf
-rm -rf alib-52
-

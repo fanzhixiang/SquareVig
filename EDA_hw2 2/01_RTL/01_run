@@ -1,2 +1,0 @@
-ncverilog ./testbench.v ./square_root_finder.v +define+RTL +access+rw
-

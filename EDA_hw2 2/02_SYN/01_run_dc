@@ -1,2 +1,0 @@
-dc_shell-t -f SRF_syn.tcl |tee syn.log
-

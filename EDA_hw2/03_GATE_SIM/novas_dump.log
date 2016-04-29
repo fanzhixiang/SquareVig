@@ -101,9 +101,9 @@ argv[4]=-v
 argv[5]=/home/m103/m103061604/EDA_hw2/tsmc18.v
 argv[6]=+access+r
 103 profile - 100
-          CPU/Mem usage: 0.050 sys,  0.080 user,  44.51M sys,  0.00M vm
+          CPU/Mem usage: 0.060 sys,  0.070 user,  44.52M sys,  0.00M vm
 104 VC callback profile - scalar:0 vector:0
-105 Fri Apr 29 19:21:56 2016
+105 Fri Apr 29 20:18:24 2016
 106 pliAppInit
 107 pliAppMiscSet: New Sim Round
 108 LIBSSCORE=found /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so through $LD_LIBRARY_PATH setting.
@@ -118,12 +118,12 @@ argv[6]=+access+r
 #6  0x006d06b6 in _IO_getline_info_internal () from /lib/libc.so.6
 #7  0x006d0601 in _IO_getline_internal () from /lib/libc.so.6
 #8  0x006cf57a in fgets () from /lib/libc.so.6
-#9  0xf72fc951 in ndpGetCallStack () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
-#10 0xf7322784 in pliAppDbg_SigHandler () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
-#11 0xf72fc4d4 in catchSignalCB () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
+#9  0xf72dc951 in ndpGetCallStack () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
+#10 0xf7302784 in pliAppDbg_SigHandler () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
+#11 0xf72dc4d4 in catchSignalCB () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
 #12 <signal handler called>
-#13 0x0a699dba in ?? ()
-#14 0x0a699db0 in ?? ()
+#13 0x0a2f11ba in ?? ()
+#14 0x0a2f11b0 in ?? ()
 #15 0x00000000 in ?? ()
 111 Novas FSDB Dumper for IUS, Release 2012.01, Linux, 01/13/2012
 112 Copyright (C) 1996 - 2012 by SpringSoft, Inc.
@@ -142,31 +142,31 @@ argv[6]=+access+r
 125 Cell instance `testbench.square_root_finder1.add_80.U1_29'.
 126 *Novas* : End of traversing.
 127 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.400 user,  55.04M sys,  0.00M vm
-                   incr: 0.000 sys,  0.310 user,  7.49M sys,  0.00M vm
-                   accu: 0.000 sys,  0.310 user,  7.49M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.310 user,  7.49M sys,  0.00M vm
+          CPU/Mem usage: 0.060 sys,  0.380 user,  55.06M sys,  0.00M vm
+                   incr: 0.000 sys,  0.300 user,  7.49M sys,  0.00M vm
+                   accu: 0.000 sys,  0.300 user,  7.49M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.300 user,  7.49M sys,  0.00M vm
 
-          Count usage: 24532 var,  9650 idcode,  9650 callback
-                 incr: 24532 var,  9650 idcode,  9650 callback
-                 accu: 24532 var,  9650 idcode,  9650 callback
-            accu incr: 24532 var,  9650 idcode,  9650 callback
+          Count usage: 24532 var,  9644 idcode,  9644 callback
+                 incr: 24532 var,  9644 idcode,  9644 callback
+                 accu: 24532 var,  9644 idcode,  9644 callback
+            accu incr: 24532 var,  9644 idcode,  9644 callback
 128 VC callback profile - scalar:0 vector:0
-129 Fri Apr 29 19:21:56 2016
+129 Fri Apr 29 20:18:24 2016
 130 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.060 sys,  0.400 user,  56.09M sys,  0.00M vm
+          CPU/Mem usage: 0.060 sys,  0.380 user,  56.11M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
-                   accu: 0.000 sys,  0.310 user,  8.54M sys,  0.00M vm
+                   accu: 0.000 sys,  0.300 user,  8.54M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
 
-          Count usage: 24532 var,  9650 idcode,  9650 callback
+          Count usage: 24532 var,  9644 idcode,  9644 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 24532 var,  9650 idcode,  9650 callback
+                 accu: 24532 var,  9644 idcode,  9644 callback
             accu incr: 0 var,  0 idcode,  0 callback
-131 VC callback profile - scalar:9649 vector:1
-132 Fri Apr 29 19:21:57 2016
+131 VC callback profile - scalar:9643 vector:1
+132 Fri Apr 29 20:18:24 2016
 133 End of simulation at 4970000
-134 VC callback profile - scalar:47942 vector:4
-135 Fri Apr 29 19:21:57 2016
+134 VC callback profile - scalar:54135 vector:4
+135 Fri Apr 29 20:18:24 2016
 136 SimExit
 137 Sim process exit

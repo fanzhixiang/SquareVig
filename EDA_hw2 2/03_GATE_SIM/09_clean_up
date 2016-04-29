@@ -1,8 +1,0 @@
-rm -rf INCA_libs nWaveLog
-rm -rf *.fsdb.*
-rm -rf ncverilog.log.
-rm -rf *~
-rm -rf *.sdf*
-rm -rf *.rc
-rm -rf *.log
-rm -rf *.fsdb

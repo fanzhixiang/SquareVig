@@ -8,7 +8,7 @@ Report : power
         -analysis_effort low
 Design : square_root_finder
 Version: D-2010.03-SP5
-Date   : Fri Apr 29 19:05:38 2016
+Date   : Fri Apr 29 20:13:32 2016
 ****************************************
 
 
@@ -30,11 +30,11 @@ Power-specific unit information :
     Leakage Power Units = 1pW
 
 
-  Cell Internal Power  = 297.1032 uW   (79%)
-  Net Switching Power  =  78.4622 uW   (21%)
+  Cell Internal Power  = 738.7241 uW   (79%)
+  Net Switching Power  = 195.8539 uW   (21%)
                          ---------
-Total Dynamic Power    = 375.5653 uW  (100%)
+Total Dynamic Power    = 934.5780 uW  (100%)
 
-Cell Leakage Power     =   6.7852 uW
+Cell Leakage Power     =   6.7679 uW
 
 1

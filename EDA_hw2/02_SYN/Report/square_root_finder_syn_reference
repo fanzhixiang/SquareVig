@@ -3,7 +3,7 @@
 Report : reference
 Design : square_root_finder
 Version: D-2010.03-SP5
-Date   : Fri Apr 29 19:05:38 2016
+Date   : Fri Apr 29 20:13:32 2016
 ****************************************
 
 Attributes:
@@ -25,16 +25,19 @@ AND4X2             slow          19.958401       2     39.916801
 AOI2BB1X1          slow          16.632000       1     16.632000  
 AOI21X1            slow          13.305600       1     13.305600  
 AOI22X1            slow          16.632000      31    515.591999  
-AOI211X1           slow          16.632000       2     33.264000  
+AOI211X1           slow          16.632000       1     16.632000  
+AOI211XL           slow          16.632000       1     16.632000  
 AOI221X1           slow          23.284800      14    325.987194  
 BUFX3              slow          13.305600      16    212.889603  
-DFFRHQX1           slow          69.854401      79   5518.497650  n
-DFFRXL             slow          76.507202       1     76.507202  n
+DFFRHQX1           slow          69.854401      78   5448.643250  n
+DFFRXL             slow          76.507202       2    153.014404  n
 DFFSRHQX1          slow          79.833603      15   1197.504044  n
 DFFSRXL            slow          86.486397       1     86.486397  n
 INVX1              slow           6.652800      92    612.057608  
+INVXL              slow           6.652800       1      6.652800  
 NAND2BX1           slow          13.305600       3     39.916800  
-NAND2X1            slow           9.979200       8     79.833603  
+NAND2X1            slow           9.979200       7     69.854403  
+NAND2XL            slow           9.979200       1      9.979200  
 NAND4BXL           slow          19.958401       1     19.958401  
 NAND4X1            slow          16.632000       2     33.264000  
 NOR2BX1            slow          13.305600       1     13.305600  
@@ -52,11 +55,11 @@ square_root_finder_DW01_add_0  2108.937619       1   2108.937619  h
 square_root_finder_DW01_add_1  2108.937619       1   2108.937619  h
 square_root_finder_DW01_sub_1  1906.027220       1   1906.027220  h
 square_root_finder_DW02_mult_0
-                              38742.581233       1  38742.581233  h
+                              38769.192433       1  38769.192433  h
 square_root_finder_DW02_mult_1
-                              38789.150834       1  38789.150834  h
+                              38835.720434       1  38835.720434  h
 square_root_finder_DW02_mult_2
-                              36833.227488       1  36833.227488  h
+                              36819.921887       1  36819.921887  h
 -----------------------------------------------------------------------------
-Total 35 references                                 133285.522937
+Total 38 references                                 133358.703739
 1
