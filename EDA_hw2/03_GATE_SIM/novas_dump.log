@@ -1,0 +1,172 @@
+ncsim 11.10-s072
+Linux 2.6.18-274.17.1.el5 #1 SMP Tue Jan 10 17:25:58 EST 2012 x86_64
+CPU cores: 8
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		10240 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		1024
+memorylocked	32 kbytes
+maxproc			278528
+======================================
+Runtime environment variables:
+REMOTEHOST=daisy
+MANPATH=/usr/cadtool/cad/synopsys/coreconsultant/cur/doc/dware/man:/usr/spw/CDS/tools/man:/usr/spw/caesys/lmgr/man:/usr/cad/synopsys/synthesis/cur/doc/syn/man
+HOSTNAME=ws34
+SYNOPSYS_TMAX=/usr/cad/synopsys/tmax/cur
+XLOCALEDIR=/usr/cad/synopsys/astro/cur/etc/locale
+STHOME=/usr/cadtool/tcad/L_2016.03
+XKEYSYMDB=/usr/cad/synopsys/astro/cur/etc/XKeysymDB
+HOST=ws34
+TERM=xterm-256color
+SHELL=/usr/bin/tcsh
+SSH_CLIENT=140.114.24.31 54047 22
+STROOT=/usr/cadtool/tcad/L_2016.03
+DESIGNWARE_HOME=/usr/cadtool/cad/synopsys/dw_home/cur
+SFLM_SERVER=140.114.24.112
+MGC_LOCATION_MAP=NO_MAP
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+SSH_TTY=/dev/pts/3
+HSP_HOME=/usr/cad/synopsys/hspice/cur/hspice
+GROUP=m103
+USER=m103061608
+LD_LIBRARY_PATH=/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:::/usr/cadence/IC/cur/tools/lib:/usr/cad/cadence/ETS/cur/tools/lib:/usr/cad/cadence/EDI/cur//tools/tlfUtil/lib:/usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/:/usr/cad/spring_soft/verdi/cur/share/PLI/nc_xl/LINUX64/xl_shared:/usr/cad/spring_soft/verdi/cur/share/PLI/nc_xl/LINUX64/nc_shared:/usr/cad/cadence/CTOS/cur/tools/lib:/usr/cadtool/cadence/CONFRML/cur/tools/lib:/usr/openwin/lib:/usr/dt/lib:/usr/lib:/usr/local/lib
+LS_COLORS=
+SPW_SYS_DB=/usr/spw
+LISAHOME=/usr/cad/synopsys/processor_designer/cur/PD/linux
+installdir=/usr/cad/synopsys/hspice/cur/hspice
+HOSTTYPE=x86_64-linux
+ENCOUNTER=/usr/cad/cadence/EDI/cur/tools/fe
+KDEDIR=/usr
+MENTOR_LIC_SET=TRUE
+MAIL=/var/spool/mail/m103061608
+PATH=/usr/cad/synopsys/spice_explorer/cur/bin:/usr/bin/:/usr/usr/cadtool/Brains/BRAINS-CentOS-5.5-x86_64/bin:/usr/cad/synopsys/vcs/cur/bin:/usr/cad/synopsys/vcs/cur/linux/bin:/usr/cad/synopsys/vcs/cur/linux/util:/usr/cad/synopsys/vcs/cur/linux/flexlm:/usr/cadtool/silvaco/bin:/usr/cadtool/jeroo/Jeroo.jar/:/usr/laker/bin:/usr/cadtool/cad/synopsys/laker/cur/bin:/usr/cad/synopsys/tmax/cur/bin:/usr/cadtool/mentor/tessent/cur/bin:/usr/cad/tcad/bin:/usr/bin/X11:/usr/cad/synopsys/synthesis/cur/linux/syn/bin:/usr/cadtool/tcad/L_2016.03/bin:/usr/cad/synopsys/hspice/cur/simif/bin:/usr/cad/synopsys/hspice/cur/hspice/bin:/usr/cad/synopsys/hspice/cur/hspice/linux:/usr/cad/synopsys/hspice/cur/hspice/linux/veriloga_utils/veriloga/include:/usr/cad/synopsys/sold/cur:/usr/cad/synopsys/processor_designer/cur/PD/linux/bin:/usr/cad/synopsys/milkyway/cur/bin/AMD.64:/usr/cadtool/matlab/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/usr/cadence/IC/cur/tools/dfII/bin:/usr/cadence/IC/cur/tools/dracula/bin:/usr/cadence/IC/cur/tools/bin:/usr/cad/synopsys/icc/cur/amd64/syn/bin:/usr/cadtool/git/bin:/usr/cad/cadence/ETS/cur/tools/bin:/usr/cad/cadence/EDI/cur/tools/celtic/bin:/usr/cad/cadence/EDI/cur/tools/plato/bin:/usr/cad/cadence/EDI/cur/tools/dfII/bin:/usr/cad/cadence/EDI/cur/tools/fe/bin:/usr/cad/cadence/EDI/cur/tools/cdsdoc/bin:/usr/cad/cadence/EDI/cur/tools/bin:/usr/cad/cadence/EDI/cur//tools/tlfUtil/bin:/usr/cadtool/eclipse_2012/eclipse/:/usr/cad/spring_soft/verdi/cur/bin:/usr/cad/spring_soft/verdi/cur/nLint/bin:/usr/cad/cadence/CTOS/cur/tools/bin:/usr/bin/X11:/usr/cadtool/cad/synopsys/coreconsultant/cur/bin:/usr/cadtool/cadence/CONFRML/cur/./bin:/usr/cadtool/cadence/CONFRML/cur/tools/bin:/usr/mentor/calibre/cur/bin:/usr/cad/synopsys/astro/cur/bin/IA.32:/usr/cadtool/agilent/ADS/bin:/usr/cadtool/agilent/ADS/tools/bin:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/linux/syn/bin:/usr/cad/synopsys/nanosim/cur/linux/ns/bin:/usr/lib64/qt-3.3/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/cadtool/cad/synopsys/dw_home/cur/bin:/usr/cadtool/Acrobat5/bin:/usr/tma/bin:/usr/X11R6/bin
+HOY_LIC_FILE=4141@ws38
+INPUTRC=/etc/inputrc
+OAHOME=/usr/cad/cadence/EDI/cur/oa_v22.41.013
+PWD=/home/m103/m103061608/SquareVig/EDA_hw2/03_GATE_SIM
+VCS_HOME=/usr/cad/synopsys/vcs/cur
+KDE_IS_PRELINKED=1
+Laker_TCL_ToolBox=1
+SYNTHESIS=/usr/cad/synopsys/synthesis/cur
+OA_HOME=/usr/cad/cadence/EDI/cur/oa_v22.41.013
+VERPLEX_HOME=/usr/cadtool/cadence/CONFRML/cur
+AGILEESOFD_LICENSE_FILE=@140.114.24.136
+VCS_CC=gcc
+SYNOPSYS=/usr/cad/synopsys/icc/cur
+CDS_Netlisting_Mode=Analog
+PRIMETIME=/usr/cad/synopsys/primetime/cur
+LM_LICENSE_FILE=26585@lsnctu:26585@lsncu:5219@lsncu:5229@lsnctu:5229@lsncu:5229@lsntu:5229@lsnchu:5280@lsnctu:5280@140.113.202.151:5280@lsnctu.EE.NCTU.edu.tw:7606@lsntu:7606@lsncu:1717@lsnctu:26585@lscic:27000@ws38:26585@lscic.cic.org.tw:5280@lscic:5280@lsnctu:5280@lsncu:5280@140.113.202.151.EE.NCTU.edu.tw:5219@lsnctu:1717@lsnchu:1717@lsncu:1717@lsntu:7576@lsnctu.EE.NCTU.edu.tw:7576@lsnctu.EE.NCTU.edu.tw
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SHLVL=2
+HOME=/home/m103/m103061608
+OSTYPE=linux
+Laker_TCL_L3=1
+MGC_HOME=/usr/mentor/calibre/cur
+MGC_TMPDIR=/tmp
+HPEESOF_DIR=/usr/cadtool/agilent/ADS
+VENDOR=unknown
+MACHTYPE=x86_64
+LOGNAME=m103061608
+QTLIB=/usr/lib64/qt-3.3/lib
+SSH_CONNECTION=140.114.24.31 54047 140.114.24.98 22
+SPW_HOME=/usr/spw
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+ARCH=linux
+SHLIB_PATH=/usr/cad/spring_soft/verdi/cur/share/PLI/nc_xl/LINUX64/xl_shared:/usr/cad/spring_soft/verdi/cur/share/PLI/nc_xl/LINUX64/nc_shared
+DISPLAY=localhost:11.0
+SYN_MAN_DIR=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+STDB=/home/m103/m103061608/STDB
+SNPS_SIMIF=/usr/cad/synopsys/hspice/cur/simif
+SOFT_MAN_DIR=/usr/cadtool/cad/synopsys/coreconsultant/cur/doc/dware/man
+G_BROKEN_FILENAMES=1
+_=/usr/cad/cadence/INCISIV/cur/tools/bin/ncverilog
+/home/m103/m103061608/SquareVig/EDA_hw2/03_GATE_SIM/INCA_libs/irun.lnx86.11.10.nc/svpp.ts
+CDS_ARCH=lnx86
+NCRUNMODE=ncverilog:./INCA_libs/irun.lnx86.11.10.nc
+IRUNBATCH=FALSE
+TCL_LIBRARY=/usr/cad/cadence/INCISIV/cur/tools/inca/files/tcl/library
+Runtime command line arguments:
+argv[0]=ncverilog
+argv[1]=testbench.v
+argv[2]=square_root_finder_syn.v
+argv[3]=+define+GATE
+argv[4]=-v
+argv[5]=/home/m103/m103061604/EDA_hw2/tsmc18.v
+argv[6]=+access+r
+103 profile - 100
+          CPU/Mem usage: 0.050 sys,  0.080 user,  44.52M sys,  0.00M vm
+104 VC callback profile - scalar:0 vector:0
+105 Fri Apr 29 18:53:24 2016
+106 pliAppInit
+107 pliAppMiscSet: New Sim Round
+108 LIBSSCORE=found /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so through $LD_LIBRARY_PATH setting.
+109 argv[0]: square_root_finder_syn.fsdb
+110 Catch signal 11. Stack trace follows:
+#0  0xffffe410 in __kernel_vsyscall ()
+#1  0x00739ff3 in __read_nocancel () from /lib/libc.so.6
+#2  0x006d9f68 in _IO_file_read_internal () from /lib/libc.so.6
+#3  0x006db2c0 in _IO_new_file_underflow () from /lib/libc.so.6
+#4  0x006db9bb in _IO_default_uflow_internal () from /lib/libc.so.6
+#5  0x006dcd2d in __uflow () from /lib/libc.so.6
+#6  0x006d06b6 in _IO_getline_info_internal () from /lib/libc.so.6
+#7  0x006d0601 in _IO_getline_internal () from /lib/libc.so.6
+#8  0x006cf57a in fgets () from /lib/libc.so.6
+#9  0xf724a951 in ndpGetCallStack () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
+#10 0xf7270784 in pliAppDbg_SigHandler () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
+#11 0xf724a4d4 in catchSignalCB () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
+#12 <signal handler called>
+#13 0x0ac058aa in ?? ()
+#14 0x0ac058a0 in ?? ()
+#15 0x00000000 in ?? ()
+111 Novas FSDB Dumper for IUS, Release 2012.01, Linux, 01/13/2012
+112 Copyright (C) 1996 - 2012 by SpringSoft, Inc.
+113 ***********************************************************************
+114 *  WARNING -                                                          *
+115 *  The FSDB dumper support is still in beta stage for the simulator   *
+116 *  version that you are running. For any abnormal behavior, please    *
+117 *  contact SpringSoft support at support@springsoft.com for           *
+118 *  assistance.                                                        *
+119 ***********************************************************************
+120 sps_call_fsdbDumpfile at 0 : /home/m103/m103061608/SquareVig/EDA_hw2/03_GATE_SIM/testbench.v(33)
+121 argv[0]: square_root_finder_syn.fsdb
+122 *Novas* : Create FSDB file 'square_root_finder_syn.fsdb'
+123 sps_call_fsdbDumpvars at 0 : /home/m103/m103061608/SquareVig/EDA_hw2/03_GATE_SIM/testbench.v(34)
+124 *Novas* : Begin traversing the scopes, layer (0).
+125 Cell instance `testbench.square_root_finder1.add_80.U1_29'.
+126 *Novas* : End of traversing.
+127 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.050 sys,  0.400 user,  55.05M sys,  0.00M vm
+                   incr: 0.000 sys,  0.310 user,  7.49M sys,  0.00M vm
+                   accu: 0.000 sys,  0.310 user,  7.49M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.310 user,  7.49M sys,  0.00M vm
+
+          Count usage: 24532 var,  9650 idcode,  9650 callback
+                 incr: 24532 var,  9650 idcode,  9650 callback
+                 accu: 24532 var,  9650 idcode,  9650 callback
+            accu incr: 24532 var,  9650 idcode,  9650 callback
+128 VC callback profile - scalar:0 vector:0
+129 Fri Apr 29 18:53:25 2016
+130 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.050 sys,  0.400 user,  56.10M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+                   accu: 0.000 sys,  0.310 user,  8.54M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+
+          Count usage: 24532 var,  9650 idcode,  9650 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 24532 var,  9650 idcode,  9650 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+131 VC callback profile - scalar:9649 vector:1
+132 Fri Apr 29 18:53:25 2016
+133 End of simulation at 5000000
+134 VC callback profile - scalar:32265 vector:2
+135 Fri Apr 29 18:53:25 2016
+136 SimExit
+137 Sim process exit

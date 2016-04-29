@@ -3,7 +3,7 @@
 Report : reference
 Design : square_root_finder
 Version: D-2010.03-SP5
-Date   : Fri Apr 29 01:11:09 2016
+Date   : Fri Apr 29 18:49:05 2016
 ****************************************
 
 Attributes:
@@ -19,21 +19,44 @@ Attributes:
 
 Reference          Library       Unit Area   Count    Total Area   Attributes
 -----------------------------------------------------------------------------
-AND2X1             slow          13.305600      15    199.584002  
-AND2X2             slow          13.305600      33    439.084805  
-DFFHQX1            slow          53.222401      48   2554.675232  n
-INVX1              slow           6.652800      18    119.750401  
-NAND2X1            slow           9.979200       1      9.979200  
-NAND3X1            slow          13.305600       1     13.305600  
-NAND4X1            slow          16.632000       1     16.632000  
-NOR3X1             slow          13.305600       1     13.305600  
-NOR4BX1            slow          19.958401       1     19.958401  
-NOR4X1             slow          19.958401       6    119.750404  
+ADDFX2             slow          69.854401      15   1047.816010  r
+AND2X2             slow          13.305600       1     13.305600  
+AND4X2             slow          19.958401       2     39.916801  
+AOI2BB1X1          slow          16.632000       1     16.632000  
+AOI21X1            slow          13.305600       1     13.305600  
+AOI22X1            slow          16.632000      31    515.591999  
+AOI211X1           slow          16.632000       2     33.264000  
+AOI221X1           slow          23.284800      14    325.987194  
+BUFX3              slow          13.305600      16    212.889603  
+DFFRHQX1           slow          69.854401      79   5518.497650  n
+DFFRXL             slow          76.507202       1     76.507202  n
+DFFSRHQX1          slow          79.833603      15   1197.504044  n
+DFFSRXL            slow          86.486397       1     86.486397  n
+INVX1              slow           6.652800      92    612.057608  
+NAND2BX1           slow          13.305600       3     39.916800  
+NAND2X1            slow           9.979200       8     79.833603  
+NAND4BXL           slow          19.958401       1     19.958401  
+NAND4X1            slow          16.632000       2     33.264000  
+NOR2BX1            slow          13.305600       1     13.305600  
+NOR2X1             slow           9.979200       2     19.958401  
+NOR4BX1            slow          19.958401       2     39.916801  
+NOR4X1             slow          19.958401      15    299.376011  
+OAI2BB2X1          slow          23.284800      46   1071.100780  
+OAI21XL            slow          13.305600      31    412.473605  
 OAI22X1            slow          19.958401       1     19.958401  
-OR2X2              slow          13.305600       2     26.611200  
-OR3XL              slow          16.632000       6     99.792000  
-OR4X2              slow          19.958401       1     19.958401  
-XOR2X1             slow          26.611200      15    399.168005  
+OAI222XL           slow          26.611200      16    425.779205  
+OR2X1              slow          13.305600       4     53.222401  
+OR2X2              slow          13.305600      32    425.779205  
+XNOR2X1            slow          26.611200       5    133.056002  
+square_root_finder_DW01_add_0  2108.937619       1   2108.937619  h
+square_root_finder_DW01_add_1  2108.937619       1   2108.937619  h
+square_root_finder_DW01_sub_1  1906.027220       1   1906.027220  h
+square_root_finder_DW02_mult_0
+                              38742.581233       1  38742.581233  h
+square_root_finder_DW02_mult_1
+                              38789.150834       1  38789.150834  h
+square_root_finder_DW02_mult_2
+                              36833.227488       1  36833.227488  h
 -----------------------------------------------------------------------------
-Total 15 references                                  4071.513654
+Total 35 references                                 133285.522937
 1

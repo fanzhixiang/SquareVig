@@ -44,33 +44,60 @@ Reading with Presto HDL Compiler (equivalent to -rtl option).
 Running PRESTO HDLC
 Compiling source file /home/m103/m103061608/SquareVig/EDA_hw2/02_SYN/square_root_finder.v
 
-Statistics for case statements in always block at line 31 in file
+Statistics for case statements in always block at line 14 in file
 	'/home/m103/m103061608/SquareVig/EDA_hw2/02_SYN/square_root_finder.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|            32            |    auto/auto     |
-|            34            |    auto/auto     |
-|            45            |    auto/auto     |
+|            15            |    auto/auto     |
+|            68            |    auto/auto     |
 ===============================================
+Warning:  /home/m103/m103061608/SquareVig/EDA_hw2/02_SYN/square_root_finder.v:103: 'in' is being read, but does not appear in the sensitivity list of the block. (ELAB-292)
 
 Inferred memory devices in process
-	in routine square_root_finder line 31 in file
+	in routine square_root_finder line 90 in file
 		'/home/m103/m103061608/SquareVig/EDA_hw2/02_SYN/square_root_finder.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|      sqrt_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      state_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine square_root_finder line 62 in file
+	in routine square_root_finder line 101 in file
 		'/home/m103/m103061608/SquareVig/EDA_hw2/02_SYN/square_root_finder.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|        g_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
-|       inx_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       up_reg        | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       up_reg        | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine square_root_finder line 110 in file
+		'/home/m103/m103061608/SquareVig/EDA_hw2/02_SYN/square_root_finder.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       low_reg       | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine square_root_finder line 119 in file
+		'/home/m103/m103061608/SquareVig/EDA_hw2/02_SYN/square_root_finder.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       cat_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine square_root_finder line 128 in file
+		'/home/m103/m103061608/SquareVig/EDA_hw2/02_SYN/square_root_finder.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        g_reg        | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
 Current design is now '/home/m103/m103061608/SquareVig/EDA_hw2/02_SYN/square_root_finder.db:square_root_finder'
@@ -86,7 +113,7 @@ Using operating conditions 'slow' found in library 'slow'.
 Using operating conditions 'fast' found in library 'fast'.
 1
 #----------define your clock signal and period here----------------#
-create_clock -period 100.0 [ get_ports clk ]
+create_clock -period 50.0 [ get_ports clk ]
 1
 link
 
@@ -99,8 +126,9 @@ link
 
 1
 check_design
-Warning: In design 'square_root_finder', cell 'B_2' does not drive any nets. (LINT-1)
-Warning: In design 'square_root_finder', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'square_root_finder', cell 'C951' does not drive any nets. (LINT-1)
+Warning: In design 'square_root_finder', cell 'C989' does not drive any nets. (LINT-1)
+Warning: In design 'square_root_finder', cell 'C990' does not drive any nets. (LINT-1)
 1
 uniquify
 1
@@ -117,7 +145,7 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
 ============================================================================
 
 
-Information: There are 2 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+Information: There are 3 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
 
 
 Warning: Operating condition slow set on design square_root_finder has different process,
@@ -128,88 +156,45 @@ fast is characterized. Delays may be inaccurate as a result. (OPT-998)
   ------------------------
   Processing 'square_root_finder'
 Information: The register 'g_reg[31]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[30]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[29]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[28]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[27]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[26]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[25]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[24]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[23]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[22]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[21]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[20]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[19]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[18]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[17]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[16]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[15]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[14]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[13]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[12]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[11]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[10]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[9]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[8]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[7]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[6]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[5]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[4]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[3]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[2]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[1]' is a constant and will be removed. (OPT-1206)
-Information: The register 'g_reg[0]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[31]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[30]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[29]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[28]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[11]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[10]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[9]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[8]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[7]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[6]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[5]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[4]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[3]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[2]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[1]' is a constant and will be removed. (OPT-1206)
-Information: The register 'inx_reg[0]' is a constant and will be removed. (OPT-1206)
 
   Updating timing information
 Information: Updating design information... (UID-85)
 
   Beginning Implementation Selection
   ----------------------------------
+  Processing 'square_root_finder_DW01_add_0'
+  Processing 'square_root_finder_DW01_add_1'
   Processing 'square_root_finder_DW01_cmp2_0'
   Processing 'square_root_finder_DW01_sub_0'
   Processing 'square_root_finder_DW02_mult_0'
-  Processing 'square_root_finder_DW01_add_0'
+  Processing 'square_root_finder_DW01_add_2'
   Processing 'square_root_finder_DW01_sub_1'
   Processing 'square_root_finder_DW02_mult_1'
-  Processing 'square_root_finder_DW01_add_1'
+  Processing 'square_root_finder_DW01_add_3'
   Processing 'square_root_finder_DW02_mult_2'
-  Processing 'square_root_finder_DW01_add_2'
+  Processing 'square_root_finder_DW01_add_4'
 
   Beginning Mapping Optimizations  (Medium effort)
   -------------------------------
+Information: The register 'low_reg[31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'up_reg[31]' is a constant and will be removed. (OPT-1206)
 
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:12    7328.1      0.00       0.0       0.0                          
-    0:00:12    7328.1      0.00       0.0       0.0                          
-    0:00:12    7328.1      0.00       0.0       0.0                          
-    0:00:12    7328.1      0.00       0.0       0.0                          
-    0:00:12    7328.1      0.00       0.0       0.0                          
-    0:00:12    4121.4      0.00       0.0       0.0                          
-    0:00:12    4121.4      0.00       0.0       0.0                          
-    0:00:12    4121.4      0.00       0.0       0.0                          
-    0:00:12    4121.4      0.00       0.0       0.0                          
-    0:00:12    4121.4      0.00       0.0       0.0                          
-    0:00:12    4121.4      0.00       0.0       0.0                          
-    0:00:12    4121.4      0.00       0.0       0.0                          
-    0:00:12    4121.4      0.00       0.0       0.0                          
+    0:00:13  246003.9      0.00       0.0       0.0                          
+    0:00:13  246003.9      0.00       0.0       0.0                          
+    0:00:13  246003.9      0.00       0.0       0.0                          
+    0:00:13  246003.9      0.00       0.0       0.0                          
+    0:00:13  246003.9      0.00       0.0       0.0                          
+    0:00:15  134799.0      0.00       0.0       0.0                          
+    0:00:15  134799.0      0.00       0.0       0.0                          
+    0:00:15  134799.0      0.00       0.0       0.0                          
+    0:00:15  134799.0      0.00       0.0       0.0                          
+    0:00:15  134799.0      0.00       0.0       0.0                          
+    0:00:15  134799.0      0.00       0.0       0.0                          
+    0:00:15  134799.0      0.00       0.0       0.0                          
+    0:00:15  134799.0      0.00       0.0       0.0                          
 
 
 
@@ -219,9 +204,9 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:12    4121.4      0.00       0.0       0.0                          
-    0:00:12    4121.4      0.00       0.0       0.0                          
-    0:00:13    4121.4      0.00       0.0       0.0                          
+    0:00:15  134799.0      0.00       0.0       0.0                          
+    0:00:15  134799.0      0.00       0.0       0.0                          
+    0:00:16  134799.0      0.00       0.0       0.0                          
 
 
   Beginning Area-Recovery Phase  (cleanup)
@@ -230,21 +215,24 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:13    4121.4      0.00       0.0       0.0                          
-    0:00:13    4121.4      0.00       0.0       0.0                          
-    0:00:13    4094.8      0.00       0.0       0.0                          
-    0:00:13    4078.2      0.00       0.0       0.0                          
-    0:00:13    4071.5      0.00       0.0       0.0                          
-    0:00:13    4071.5      0.00       0.0       0.0                          
-    0:00:13    4071.5      0.00       0.0       0.0                          
-    0:00:13    4071.5      0.00       0.0       0.0                          
-    0:00:13    4071.5      0.00       0.0       0.0                          
-    0:00:13    4071.5      0.00       0.0       0.0                          
-    0:00:13    4071.5      0.00       0.0       0.0                          
-    0:00:13    4071.5      0.00       0.0       0.0                          
-    0:00:13    4071.5      0.00       0.0       0.0                          
-    0:00:13    4071.5      0.00       0.0       0.0                          
-    0:00:13    4071.5      0.00       0.0       0.0                          
+    0:00:16  134799.0      0.00       0.0       0.0                          
+    0:00:16  134799.0      0.00       0.0       0.0                          
+    0:00:16  134253.5      0.00       0.0       0.0                          
+    0:00:16  134020.7      0.00       0.0       0.0                          
+    0:00:16  133864.3      0.00       0.0       0.0                          
+    0:00:16  133724.6      0.00       0.0       0.0                          
+    0:00:16  133618.2      0.00       0.0       0.0                          
+    0:00:16  133525.0      0.00       0.0       0.0                          
+    0:00:17  133418.6      0.00       0.0       0.0                          
+    0:00:17  133332.1      0.00       0.0       0.0                          
+    0:00:17  133332.1      0.00       0.0       0.0                          
+    0:00:17  133332.1      0.00       0.0       0.0                          
+    0:00:17  133332.1      0.00       0.0       0.0                          
+    0:00:17  133332.1      0.00       0.0       0.0                          
+    0:00:17  133332.1      0.00       0.0       0.0                          
+    0:00:17  133332.1      0.00       0.0       0.0                          
+    0:00:17  133332.1      0.00       0.0       0.0                          
+    0:00:17  133285.5      0.00       0.0       0.0                          
 Loading db file '/home/m103/m103061604/EDA_hw2/db/slow.db'
 Loading db file '/home/m103/m103061604/EDA_hw2/db/fast.db'
 Loading db file '/home/m103/m103061604/EDA_hw2/db/typical.db'
@@ -280,6 +268,7 @@ report_reference > ./Report/$DESIGN\_syn_reference
 report_timing -path full -delay max > ./Report/$DESIGN\_syn_timing.trp
 write -format verilog -hierarchy -output ./Netlist/$DESIGN\_syn.v
 Writing verilog file '/home/m103/m103061608/SquareVig/EDA_hw2/02_SYN/Netlist/square_root_finder_syn.v'.
+Warning: Verilog writer has added 112 nets to module square_root_finder using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
 1
 write_sdf -version 1.0 -context verilog -load_delay cell ./Netlist/$DESIGN\_syn.sdf
 Information: Writing timing information to file '/home/m103/m103061608/SquareVig/EDA_hw2/02_SYN/Netlist/square_root_finder_syn.sdf'. (WT-3)

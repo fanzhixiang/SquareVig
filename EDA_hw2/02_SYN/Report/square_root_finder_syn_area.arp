@@ -4,7 +4,7 @@ Information: Updating graph... (UID-83)
 Report : area
 Design : square_root_finder
 Version: D-2010.03-SP5
-Date   : Fri Apr 29 01:11:08 2016
+Date   : Fri Apr 29 18:49:03 2016
 ****************************************
 
 Information: Updating design information... (UID-85)
@@ -13,27 +13,33 @@ Library(s) Used:
     slow (File: /home/m103/m103061604/EDA_hw2/db/slow.db)
 
 Number of ports:               50
-Number of nets:               168
-Number of cells:              150
-Number of references:          15
+Number of nets:               662
+Number of cells:              446
+Number of references:          35
 
-Combinational area:       1516.838422
-Noncombinational area:    2554.675232
+Combinational area:       126406.527644
+Noncombinational area:    6878.995293
 Net Interconnect area:      undefined  (No wire load specified)
 
-Total cell area:          4071.513654
+Total cell area:          133285.522937
 Total area:                 undefined
 
 Hierarchical area distribution
 ------------------------------
 
-                                  Global cell area          Local cell area
-                                  ------------------  ---------------------------- 
-Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black
-                                  Total      Total    national   national   boxes   Design
---------------------------------  ---------  -------  ---------  ---------  ------  ---------
-square_root_finder                4071.5122    100.0  1516.8364  2554.6755  0.0000  square_root_finder
---------------------------------  ---------  -------  ---------  ---------  ------  ---------
-Total                                                 1516.8364  2554.6755  0.0000
+                                  Global cell area             Local cell area
+                                  --------------------  ------------------------------ 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-  Black
+                                  Total        Total    national     national   boxes   Design
+--------------------------------  -----------  -------  -----------  ---------  ------  ------------------------------
+square_root_finder                133283.7500    100.0    5917.6675  6878.9980  0.0000  square_root_finder
+add_73                              2108.9370      1.6    2108.9370     0.0000  0.0000  square_root_finder_DW01_add_1
+add_80                              2108.9370      1.6    2108.9370     0.0000  0.0000  square_root_finder_DW01_add_0
+mult_31                            36833.0898     27.6   36833.0898     0.0000  0.0000  square_root_finder_DW02_mult_2
+mult_33                            38789.0273     29.1   38789.0273     0.0000  0.0000  square_root_finder_DW02_mult_1
+mult_51                            38742.4570     29.1   38742.4570     0.0000  0.0000  square_root_finder_DW02_mult_0
+sub_33                              1906.0267      1.4    1906.0267     0.0000  0.0000  square_root_finder_DW01_sub_1
+--------------------------------  -----------  -------  -----------  ---------  ------  ------------------------------
+Total                                                   126406.1328  6878.9980  0.0000
 
 1

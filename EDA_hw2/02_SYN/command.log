@@ -1,7 +1,7 @@
 #@ # 
 #@ # Running dc_shell Version D-2010.03-SP5 for linux -- Oct 18, 2010
-#@ # Date:   %sFri Apr 29 01:10:47 2016
-#@ # Run by: m10306160@ws35
+#@ # Date:   %sFri Apr 29 18:48:37 2016
+#@ # Run by: m10306160@ws34
 #@ 
 
 source /usr/cad/synopsys/synthesis/cur/admin/setup/.synopsys_dc.setup
@@ -4713,7 +4713,7 @@ source -echo -verbose /home/m103/m103061608/SquareVig/EDA_hw2/02_SYN/SRF_syn.tcl
 #@ set_operating_conditions -min fast -max slow
 #@ 
 #@ #----------define your clock signal and period here----------------#
-#@ create_clock -period 100.0 [ get_ports clk ]
+#@ create_clock -period 50.0 [ get_ports clk ]
 #@ 
 #@ link
 #@ 

@@ -1,5 +1,5 @@
 ncverilog: 11.10-s072: (c) Copyright 1995-2013 Cadence Design Systems, Inc.
-TOOL:	ncverilog	11.10-s072: Started on Apr 29, 2016 at 01:12:27 CST
+TOOL:	ncverilog	11.10-s072: Started on Apr 29, 2016 at 18:52:50 CST
 ncverilog
 	testbench.v
 	square_root_finder_syn.v
@@ -8,10 +8,273 @@ ncverilog
 	/home/m103/m103061604/EDA_hw2/tsmc18.v
 	+access+r
 file: testbench.v
-`timescale 50ns/1ps
-            |
-ncvlog: *E,TMSER6 (testbench.v,1|12): illegal <time_unit> integer value. Not one of 1, 10, or 100 [19.8(IEEE Std 1364-2005)].
-	Total errors/warnings found outside modules and primitives:
-		errors: 1, warnings: 0
-ncverilog: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
-TOOL:	ncverilog	11.10-s072: Exiting on Apr 29, 2016 at 01:12:27 CST  (total: 00:00:00)
+	module worklib.testbench:v
+		errors: 0, warnings: 0
+file: square_root_finder_syn.v
+	module worklib.square_root_finder_DW01_add_0:v
+		errors: 0, warnings: 0
+	module worklib.square_root_finder_DW01_add_1:v
+		errors: 0, warnings: 0
+	module worklib.square_root_finder_DW02_mult_2:v
+		errors: 0, warnings: 0
+	module worklib.square_root_finder_DW02_mult_1:v
+		errors: 0, warnings: 0
+	module worklib.square_root_finder_DW01_sub_1:v
+		errors: 0, warnings: 0
+	module worklib.square_root_finder_DW02_mult_0:v
+		errors: 0, warnings: 0
+	module worklib.square_root_finder:v
+		errors: 0, warnings: 0
+file: /home/m103/m103061604/EDA_hw2/tsmc18.v
+	module tsmc18.XOR3X2:v
+		errors: 0, warnings: 0
+	module tsmc18.ADDFX2:v
+		errors: 0, warnings: 0
+	module tsmc18.AND2X1:v
+		errors: 0, warnings: 0
+	module tsmc18.AND2X2:v
+		errors: 0, warnings: 0
+	module tsmc18.AND4X2:v
+		errors: 0, warnings: 0
+	module tsmc18.AOI211X1:v
+		errors: 0, warnings: 0
+	module tsmc18.AOI21X1:v
+		errors: 0, warnings: 0
+	module tsmc18.AOI221X1:v
+		errors: 0, warnings: 0
+	module tsmc18.AOI22X1:v
+		errors: 0, warnings: 0
+	module tsmc18.AOI2BB1X1:v
+		errors: 0, warnings: 0
+	module tsmc18.BUFX3:v
+		errors: 0, warnings: 0
+	module tsmc18.DFFRXL:v
+		errors: 0, warnings: 0
+	module tsmc18.DFFRHQX1:v
+		errors: 0, warnings: 0
+	module tsmc18.DFFSRXL:v
+		errors: 0, warnings: 0
+	module tsmc18.DFFSRHQX1:v
+		errors: 0, warnings: 0
+	module tsmc18.INVX1:v
+		errors: 0, warnings: 0
+	module tsmc18.NAND2X1:v
+		errors: 0, warnings: 0
+	module tsmc18.NAND2BX1:v
+		errors: 0, warnings: 0
+	module tsmc18.NAND4X1:v
+		errors: 0, warnings: 0
+	module tsmc18.NAND4BXL:v
+		errors: 0, warnings: 0
+	module tsmc18.NOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc18.NOR2BX1:v
+		errors: 0, warnings: 0
+	module tsmc18.NOR4X1:v
+		errors: 0, warnings: 0
+	module tsmc18.NOR4BX1:v
+		errors: 0, warnings: 0
+	module tsmc18.OAI21XL:v
+		errors: 0, warnings: 0
+	module tsmc18.OAI222XL:v
+		errors: 0, warnings: 0
+	module tsmc18.OAI22X1:v
+		errors: 0, warnings: 0
+	module tsmc18.OAI2BB2X1:v
+		errors: 0, warnings: 0
+	module tsmc18.OR2X1:v
+		errors: 0, warnings: 0
+	module tsmc18.OR2X2:v
+		errors: 0, warnings: 0
+	module tsmc18.XNOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc18.XOR2X1:v
+		errors: 0, warnings: 0
+	primitive tsmc18.udp_dff:v
+		errors: 0, warnings: 0
+		Caching library 'tsmc18' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Reading SDF file from location "../02_SYN/Netlist/square_root_finder_syn.sdf"
+	Writing compiled SDF file to "square_root_finder_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     square_root_finder_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testbench.square_root_finder1
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		tsmc18.ADDFX2:v <0x705411a6>
+			streams:  14, words:  1561
+		tsmc18.DFFRHQX1:v <0x3cabb9f8>
+			streams:   1, words:    53
+		tsmc18.DFFRXL:v <0x5ee9a7f7>
+			streams:   2, words:   108
+		tsmc18.DFFSRHQX1:v <0x01857b8c>
+			streams:   1, words:    53
+		tsmc18.DFFSRXL:v <0x0a6c3d0d>
+			streams:   2, words:   108
+		tsmc18.XNOR2X1:v <0x0df9191e>
+			streams:   4, words:   284
+		tsmc18.XOR2X1:v <0x3eb7c0bc>
+			streams:   4, words:   284
+		tsmc18.XOR3X2:v <0x0faedf53>
+			streams:  10, words:  1277
+		worklib.square_root_finder:v <0x09fc49af>
+			streams:   0, words:     0
+		worklib.testbench:v <0x58728389>
+			streams:   3, words:  2093
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                 3553      40
+		UDPs:                      96       1
+		Primitives:              9709       8
+		Timing outputs:          4943      22
+		Registers:                 99       8
+		Scalar wires:            5052       -
+		Expanded wires:            16       1
+		Always blocks:              1       1
+		Initial blocks:             2       2
+		Timing checks:            944     148
+		Interconnect:            8769       -
+		Delayed tcheck signals:   304     112
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testbench:v
+Loading snapshot worklib.testbench:v .................... Done
+*Novas* Loading libsscore_ius111.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+Novas FSDB Dumper for IUS, Release 2012.01, Linux, 01/13/2012
+Copyright (C) 1996 - 2012 by SpringSoft, Inc.
+***********************************************************************
+*  WARNING -                                                          *
+*  The FSDB dumper support is still in beta stage for the simulator   *
+*  version that you are running. For any abnormal behavior, please    *
+*  contact SpringSoft support at support@springsoft.com for           *
+*  assistance.                                                        *
+***********************************************************************
+*Novas* : Create FSDB file 'square_root_finder_syn.fsdb'
+*Novas* : Begin traversing the scopes, layer (0).
+*Novas* : End of traversing.
+
+Warning!  Timing violation
+           $hold( posedge SN:112 PS, posedge RN:98 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 8945
+           Scope: testbench.square_root_finder1.up_reg_21_
+            Time: 183 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_20_
+            Time: 209 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_16_
+            Time: 209 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_17_
+            Time: 209 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_18_
+            Time: 209 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_19_
+            Time: 209 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_12_
+            Time: 209 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_13_
+            Time: 209 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_14_
+            Time: 209 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_15_
+            Time: 209 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_7_
+            Time: 209 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_8_
+            Time: 209 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_9_
+            Time: 209 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_10_
+            Time: 209 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_11_
+            Time: 209 PS
+
+
+Warning!  Timing violation
+           $hold( posedge SN:132 PS, posedge RN:104 PS,  1.000 : 1 NS );
+            File: /home/m103/m103061604/EDA_hw2/tsmc18.v, line = 9014
+           Scope: testbench.square_root_finder1.up_reg_6_
+            Time: 209 PS
+
+Simulation complete via $finish(1) at time 5 US + 0
+./testbench.v:36     #5000 $finish;
+ncsim> exit
+TOOL:	ncverilog	11.10-s072: Exiting on Apr 29, 2016 at 18:53:25 CST  (total: 00:00:35)
