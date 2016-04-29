@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-`define CLK 50
+`define CLK 25
 
 module testbench;
 
@@ -18,8 +18,16 @@ initial begin
     in =  16'd0;
     #170 in = 16'd3; rst = 1'b0;
     #100 rst = 1'b1;
-    #5000 $finish;
+
+    #1500 in = 16'd7; rst = 1'b0;
+    #100 rst = 1'b1;
+
+    #1500 in = 16'd11; rst = 1'b0;
+    #100 rst = 1'b1;
+
+    #1500 $finish;
 end
+
 
 
 
@@ -33,6 +41,6 @@ end
         $fsdbDumpfile("square_root_finder_syn.fsdb");
         $fsdbDumpvars;
 	    `endif
-    #5000 $finish;
+    #6000 $finish;
   end
 endmodule

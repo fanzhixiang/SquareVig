@@ -1,32 +1,33 @@
 ncverilog: 11.10-s072: (c) Copyright 1995-2013 Cadence Design Systems, Inc.
-TOOL:	ncverilog	11.10-s072: Started on Apr 29, 2016 at 00:55:37 CST
+TOOL:	ncverilog	11.10-s072: Started on Apr 29, 2016 at 19:23:43 CST
 ncverilog
 	./testbench.v
 	./square_root_finder.v
 	+define+RTL
 	+access+rw
-Recompiling... reason: file './square_root_finder.v' is newer than expected.
-	expected: Fri Apr 29 00:46:33 2016
-	actual:   Fri Apr 29 00:53:16 2016
-file: ./square_root_finder.v
-	module worklib.square_root_finder:v
+Recompiling... reason: file './testbench.v' is newer than expected.
+	expected: Fri Apr 29 19:11:22 2016
+	actual:   Fri Apr 29 19:23:39 2016
+file: ./testbench.v
+	module worklib.testbench:v
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.square_root_finder:v <0x08a3a684>
-			streams:   7, words:  1759
+		worklib.testbench:v <0x4f446aa4>
+			streams:   6, words:  3349
 	Loading native compiled code:     .................... Done
 	Building instance specific data structures.
 	Design hierarchy summary:
 		                 Instances  Unique
 		Modules:                 2       2
-		Registers:               9       9
+		Registers:              13      13
 		Scalar wires:            2       -
-		Vectored wires:          2       -
-		Always blocks:           4       4
-		Initial blocks:          1       1
+		Vectored wires:          3       -
+		Always blocks:           7       7
+		Initial blocks:          2       2
+		Cont. assignments:       1       2
 		Pseudo assignments:      3       3
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: worklib.testbench:v
@@ -46,7 +47,7 @@ Copyright (C) 1996 - 2012 by SpringSoft, Inc.
 *Novas* : Create FSDB file 'square_root_finder.fsdb'
 *Novas* : Begin traversing the scopes, layer (0).
 *Novas* : End of traversing.
-Simulation complete via $finish(1) at time 1010 NS + 0
-./testbench.v:31     # 1000 $finish;
+Simulation complete via $finish(1) at time 4970 NS + 0
+./testbench.v:28     #1500 $finish;
 ncsim> exit
-TOOL:	ncverilog	11.10-s072: Exiting on Apr 29, 2016 at 00:56:05 CST  (total: 00:00:28)
+TOOL:	ncverilog	11.10-s072: Exiting on Apr 29, 2016 at 19:24:09 CST  (total: 00:00:26)

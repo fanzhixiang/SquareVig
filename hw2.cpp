@@ -1,12 +1,3 @@
-/*
- * hw2.cpp
- *
- *  Created on: 4/22, 2016
- *      Author: u100061230 Yi-Chin Wong
- *      title : hw2.cpp
- */
-
-
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,7 +13,7 @@ double betterGuess(double x, double g);
 
 int main(void){
 	double num;
-	cout << "please enter the number you want to find the sqrt root . " << endl;
+	cout << "Input= " << endl;
 	cin  >> num ;
 	cout << "the sqrt root is " << SqrtNumber(num) << endl;
 
@@ -33,15 +24,6 @@ double SqrtNumber(double num)			//ex:  SqrtNumber(3)
 {
     return test(num, 0, num, 0);
 }
-// double test(double x, double g, double go) {		//ex: test(3, 1)
-//    if (closeEnough(x, g*g))
-//       return g;
-//    else
-//    		if ((x - g*g) >= 0 )
-//       		return test(x, betterGuess(x, g), g);
-// 		else
-// 			return test(x, betterGuess(go, g), go);
-// }
 
 double test(double x, double g, double up, double low) {		//ex: test(3, 1)
    if (closeEnough(x, g*g))

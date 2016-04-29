@@ -1,6 +1,6 @@
 ncsim 11.10-s072
 Linux 2.6.18-274.17.1.el5 #1 SMP Tue Jan 10 17:25:58 EST 2012 x86_64
-CPU cores: 16
+CPU cores: 8
 Limit information:
 ======================================
 cputime			unlimited
@@ -17,15 +17,15 @@ maxproc			278528
 Runtime environment variables:
 REMOTEHOST=daisy
 MANPATH=/usr/cadtool/cad/synopsys/coreconsultant/cur/doc/dware/man:/usr/spw/CDS/tools/man:/usr/spw/caesys/lmgr/man:/usr/cad/synopsys/synthesis/cur/doc/syn/man
-HOSTNAME=ws35
+HOSTNAME=ws34
 SYNOPSYS_TMAX=/usr/cad/synopsys/tmax/cur
 XLOCALEDIR=/usr/cad/synopsys/astro/cur/etc/locale
 STHOME=/usr/cadtool/tcad/L_2016.03
 XKEYSYMDB=/usr/cad/synopsys/astro/cur/etc/XKeysymDB
-HOST=ws35
+HOST=ws34
 TERM=xterm-256color
 SHELL=/usr/bin/tcsh
-SSH_CLIENT=140.114.24.31 37573 22
+SSH_CLIENT=140.114.24.31 54047 22
 STROOT=/usr/cadtool/tcad/L_2016.03
 DESIGNWARE_HOME=/usr/cadtool/cad/synopsys/dw_home/cur
 SFLM_SERVER=140.114.24.112
@@ -62,7 +62,7 @@ VCS_CC=gcc
 SYNOPSYS=/usr/cad/synopsys/icc/cur
 CDS_Netlisting_Mode=Analog
 PRIMETIME=/usr/cad/synopsys/primetime/cur
-LM_LICENSE_FILE=26585@lsnctu:26585@lsncu:5219@lsncu:5229@lsnctu:5229@lsncu:5229@lsntu:5229@lsnchu:5280@lsnctu:5280@140.113.202.151:5280@lsnctu.EE.NCTU.edu.tw:7606@lsntu:7606@lsncu:1717@lsnctu:26585@lscic:27000@ws38:26585@lscic.cic.org.tw:5280@lscic:5280@lsncu:5280@lsntu:5280@lsnctu:5280@140.113.202.151:5280@lsnctu.EE.NCTU.edu.tw:5219@lsnctu:1717@lsnchu:1717@lsncu:1717@lsntu:7576@lsnctu.EE.NCTU.edu.tw:7576@lsnctu.EE.NCTU.edu.tw
+LM_LICENSE_FILE=26585@lsnctu:26585@lsncu:5219@lsncu:5229@lsnctu:5229@lsncu:5229@lsntu:5229@lsnchu:5280@lsnctu:5280@140.113.202.151:5280@lsnctu.EE.NCTU.edu.tw:7606@lsntu:7606@lsncu:1717@lsnctu:26585@lscic:27000@ws38:26585@lscic.cic.org.tw:5280@lscic:5280@lsnctu:5280@lsncu:5280@140.113.202.151.EE.NCTU.edu.tw:5219@lsnctu:1717@lsnchu:1717@lsncu:1717@lsntu:7576@lsnctu.EE.NCTU.edu.tw:7576@lsnctu.EE.NCTU.edu.tw
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 SHLVL=2
 HOME=/home/m103/m103061608
@@ -75,7 +75,7 @@ VENDOR=unknown
 MACHTYPE=x86_64
 LOGNAME=m103061608
 QTLIB=/usr/lib64/qt-3.3/lib
-SSH_CONNECTION=140.114.24.31 37573 140.114.24.99 22
+SSH_CONNECTION=140.114.24.31 54047 140.114.24.98 22
 SPW_HOME=/usr/spw
 LESSOPEN=|/usr/bin/lesspipe.sh %s
 ARCH=linux
@@ -99,29 +99,29 @@ argv[2]=./square_root_finder.v
 argv[3]=+define+RTL
 argv[4]=+access+rw
 101 profile - 100
-          CPU/Mem usage: 0.060 sys,  0.080 user,  41.46M sys,  0.00M vm
+          CPU/Mem usage: 0.060 sys,  0.070 user,  41.48M sys,  0.00M vm
 102 VC callback profile - scalar:0 vector:0
-103 Fri Apr 29 00:56:04 2016
+103 Fri Apr 29 19:24:09 2016
 104 pliAppInit
 105 pliAppMiscSet: New Sim Round
 106 LIBSSCORE=found /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so through $LD_LIBRARY_PATH setting.
 107 argv[0]: square_root_finder.fsdb
 108 Catch signal 11. Stack trace follows:
 #0  0xffffe410 in __kernel_vsyscall ()
-#1  0x0088fff3 in __read_nocancel () from /lib/libc.so.6
-#2  0x0082ff68 in _IO_file_read_internal () from /lib/libc.so.6
-#3  0x008312c0 in _IO_new_file_underflow () from /lib/libc.so.6
-#4  0x008319bb in _IO_default_uflow_internal () from /lib/libc.so.6
-#5  0x00832d2d in __uflow () from /lib/libc.so.6
-#6  0x008266b6 in _IO_getline_info_internal () from /lib/libc.so.6
-#7  0x00826601 in _IO_getline_internal () from /lib/libc.so.6
-#8  0x0082557a in fgets () from /lib/libc.so.6
-#9  0xf74fb951 in ndpGetCallStack () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
-#10 0xf7521784 in pliAppDbg_SigHandler () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
-#11 0xf74fb4d4 in catchSignalCB () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
+#1  0x00739ff3 in __read_nocancel () from /lib/libc.so.6
+#2  0x006d9f68 in _IO_file_read_internal () from /lib/libc.so.6
+#3  0x006db2c0 in _IO_new_file_underflow () from /lib/libc.so.6
+#4  0x006db9bb in _IO_default_uflow_internal () from /lib/libc.so.6
+#5  0x006dcd2d in __uflow () from /lib/libc.so.6
+#6  0x006d06b6 in _IO_getline_info_internal () from /lib/libc.so.6
+#7  0x006d0601 in _IO_getline_internal () from /lib/libc.so.6
+#8  0x006cf57a in fgets () from /lib/libc.so.6
+#9  0xf7463951 in ndpGetCallStack () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
+#10 0xf7489784 in pliAppDbg_SigHandler () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
+#11 0xf74634d4 in catchSignalCB () from /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
 #12 <signal handler called>
-#13 0x0ae3df2a in ?? ()
-#14 0x0ae3df20 in ?? ()
+#13 0x09b8b322 in ?? ()
+#14 0x09b8b318 in ?? ()
 #15 0x00000000 in ?? ()
 109 Novas FSDB Dumper for IUS, Release 2012.01, Linux, 01/13/2012
 110 Copyright (C) 1996 - 2012 by SpringSoft, Inc.
@@ -132,38 +132,38 @@ argv[4]=+access+rw
 115 *  contact SpringSoft support at support@springsoft.com for           *
 116 *  assistance.                                                        *
 117 ***********************************************************************
-118 sps_call_fsdbDumpfile at 10000 : /home/m103/m103061608/SquareVig/EDA_hw2/01_RTL/testbench.v(23)
+118 sps_call_fsdbDumpfile at 0 : /home/m103/m103061608/SquareVig/EDA_hw2/01_RTL/testbench.v(36)
 119 argv[0]: square_root_finder.fsdb
 120 *Novas* : Create FSDB file 'square_root_finder.fsdb'
-121 sps_call_fsdbDumpvars at 10000 : /home/m103/m103061608/SquareVig/EDA_hw2/01_RTL/testbench.v(24)
+121 sps_call_fsdbDumpvars at 0 : /home/m103/m103061608/SquareVig/EDA_hw2/01_RTL/testbench.v(37)
 122 *Novas* : Begin traversing the scopes, layer (0).
 123 *Novas* : End of traversing.
 124 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.080 user,  46.78M sys,  0.00M vm
+          CPU/Mem usage: 0.060 sys,  0.080 user,  46.80M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  2.28M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  2.28M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  2.28M sys,  0.00M vm
 
-          Count usage: 13 var,  13 idcode,  13 callback
-                 incr: 13 var,  13 idcode,  13 callback
-                 accu: 13 var,  13 idcode,  13 callback
-            accu incr: 13 var,  13 idcode,  13 callback
+          Count usage: 19 var,  18 idcode,  18 callback
+                 incr: 19 var,  18 idcode,  18 callback
+                 accu: 19 var,  18 idcode,  18 callback
+            accu incr: 19 var,  18 idcode,  18 callback
 125 VC callback profile - scalar:0 vector:0
-126 Fri Apr 29 00:56:05 2016
+126 Fri Apr 29 19:24:09 2016
 127 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.060 sys,  0.080 user,  47.83M sys,  0.00M vm
+          CPU/Mem usage: 0.060 sys,  0.080 user,  47.86M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  3.33M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
 
-          Count usage: 13 var,  13 idcode,  13 callback
+          Count usage: 19 var,  18 idcode,  18 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 13 var,  13 idcode,  13 callback
+                 accu: 19 var,  18 idcode,  18 callback
             accu incr: 0 var,  0 idcode,  0 callback
-128 VC callback profile - scalar:4 vector:9
-129 Fri Apr 29 00:56:05 2016
-130 End of simulation at 1010000
-131 VC callback profile - scalar:405 vector:54
-132 Fri Apr 29 00:56:05 2016
+128 VC callback profile - scalar:4 vector:14
+129 Fri Apr 29 19:24:09 2016
+130 End of simulation at 4970000
+131 VC callback profile - scalar:414 vector:419
+132 Fri Apr 29 19:24:09 2016
 133 SimExit
 134 Sim process exit

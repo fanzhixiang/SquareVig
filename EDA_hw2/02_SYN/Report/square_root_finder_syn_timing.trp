@@ -6,15 +6,14 @@ Report : timing
         -max_paths 1
 Design : square_root_finder
 Version: D-2010.03-SP5
-Date   : Fri Apr 29 18:49:05 2016
+Date   : Fri Apr 29 20:13:32 2016
 ****************************************
 
 Operating Conditions: slow   Library: slow
 Wire Load Model Mode: top
 
-  Startpoint: g_reg_0_ (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: state_reg_0_
-            (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: g_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cat_reg_0_ (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
 
@@ -22,67 +21,65 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.00       0.00
-  g_reg_0_/CK (DFFRHQX1)                                  0.00       0.00 r
-  g_reg_0_/Q (DFFRHQX1)                                   0.35       0.35 r
-  U433/Y (INVX1)                                          0.11       0.46 f
-  U336/Y (INVX1)                                          0.57       1.04 r
-  mult_33/A[0] (square_root_finder_DW02_mult_1)           0.00       1.04 r
-  mult_33/U48/Y (INVX1)                                   0.66       1.70 f
-  mult_33/U426/Y (NOR2X1)                                 0.29       1.98 r
-  mult_33/U3/Y (AND2X2)                                   0.18       2.17 r
-  mult_33/S1_2_0/CO (ADDFX2)                              0.57       2.74 r
-  mult_33/S1_3_0/CO (ADDFX2)                              0.58       3.31 r
-  mult_33/S1_4_0/CO (ADDFX2)                              0.58       3.89 r
-  mult_33/S1_5_0/CO (ADDFX2)                              0.58       4.47 r
-  mult_33/S1_6_0/CO (ADDFX2)                              0.58       5.05 r
-  mult_33/S1_7_0/CO (ADDFX2)                              0.58       5.63 r
-  mult_33/S1_8_0/CO (ADDFX2)                              0.58       6.20 r
-  mult_33/S1_9_0/CO (ADDFX2)                              0.58       6.78 r
-  mult_33/S1_10_0/CO (ADDFX2)                             0.58       7.36 r
-  mult_33/S1_11_0/CO (ADDFX2)                             0.58       7.94 r
-  mult_33/S1_12_0/CO (ADDFX2)                             0.58       8.51 r
-  mult_33/S1_13_0/CO (ADDFX2)                             0.58       9.09 r
-  mult_33/S1_14_0/CO (ADDFX2)                             0.58       9.67 r
-  mult_33/S1_15_0/CO (ADDFX2)                             0.58      10.25 r
-  mult_33/S1_16_0/CO (ADDFX2)                             0.58      10.82 r
-  mult_33/S1_17_0/CO (ADDFX2)                             0.58      11.40 r
-  mult_33/S1_18_0/CO (ADDFX2)                             0.58      11.98 r
-  mult_33/S1_19_0/CO (ADDFX2)                             0.58      12.56 r
-  mult_33/S1_20_0/CO (ADDFX2)                             0.58      13.14 r
-  mult_33/S1_21_0/CO (ADDFX2)                             0.58      13.71 r
-  mult_33/S1_22_0/CO (ADDFX2)                             0.58      14.29 r
-  mult_33/S1_23_0/CO (ADDFX2)                             0.58      14.87 r
-  mult_33/S1_24_0/CO (ADDFX2)                             0.58      15.45 r
-  mult_33/S1_25_0/CO (ADDFX2)                             0.58      16.02 r
-  mult_33/S1_26_0/CO (ADDFX2)                             0.58      16.60 r
-  mult_33/S1_27_0/CO (ADDFX2)                             0.58      17.18 r
-  mult_33/S1_28_0/CO (ADDFX2)                             0.58      17.76 r
-  mult_33/S1_29_0/CO (ADDFX2)                             0.58      18.33 r
-  mult_33/S1_30_0/CO (ADDFX2)                             0.57      18.91 r
-  mult_33/U70/Y (XOR2X1)                                  0.26      19.17 r
-  mult_33/PRODUCT[31] (square_root_finder_DW02_mult_1)
-                                                          0.00      19.17 r
-  sub_33/B[31] (square_root_finder_DW01_sub_1)            0.00      19.17 r
-  sub_33/U35/Y (XOR2X1)                                   0.26      19.43 r
-  sub_33/DIFF[31] (square_root_finder_DW01_sub_1)         0.00      19.43 r
-  U322/Y (NOR4X1)                                         0.07      19.50 f
-  U337/Y (AND4X2)                                         0.24      19.74 f
-  U329/Y (AND4X2)                                         0.25      19.99 f
-  U327/Y (AOI21X1)                                        0.14      20.13 r
-  U326/Y (NAND4BXL)                                       0.14      20.27 f
-  state_reg_0_/D (DFFRHQX1)                               0.00      20.27 f
-  data arrival time                                                 20.27
+  g_reg_1_/CK (DFFRHQX1)                                  0.00       0.00 r
+  g_reg_1_/Q (DFFRHQX1)                                   0.69       0.69 r
+  mult_51/B[1] (square_root_finder_DW02_mult_0)           0.00       0.69 r
+  mult_51/U39/Y (INVXL)                                   0.22       0.91 f
+  mult_51/U85/Y (INVX1)                                   0.17       1.08 r
+  mult_51/U70/Y (INVX1)                                   0.29       1.37 f
+  mult_51/U615/Y (NOR2X1)                                 0.18       1.56 r
+  mult_51/U7/Y (AND2X2)                                   0.17       1.73 r
+  mult_51/S1_2_0/CO (CMPR32X1)                            0.56       2.29 r
+  mult_51/S1_3_0/CO (ADDFX2)                              0.59       2.88 r
+  mult_51/S1_4_0/CO (CMPR32X1)                            0.57       3.44 r
+  mult_51/S1_5_0/CO (ADDFX2)                              0.59       4.03 r
+  mult_51/S1_6_0/CO (ADDFX2)                              0.58       4.61 r
+  mult_51/S1_7_0/CO (CMPR32X1)                            0.57       5.17 r
+  mult_51/S1_8_0/CO (ADDFX2)                              0.59       5.76 r
+  mult_51/S1_9_0/CO (CMPR32X1)                            0.57       6.33 r
+  mult_51/S1_10_0/CO (ADDFX2)                             0.59       6.91 r
+  mult_51/S1_11_0/CO (CMPR32X1)                           0.57       7.48 r
+  mult_51/S1_12_0/CO (ADDFX2)                             0.59       8.07 r
+  mult_51/S1_13_0/CO (CMPR32X1)                           0.57       8.63 r
+  mult_51/S1_14_0/CO (ADDFX2)                             0.59       9.22 r
+  mult_51/S1_15_0/CO (CMPR32X1)                           0.57       9.79 r
+  mult_51/S1_16_0/CO (ADDFX2)                             0.59      10.38 r
+  mult_51/S1_17_0/CO (CMPR32X1)                           0.57      10.94 r
+  mult_51/S1_18_0/CO (ADDFX2)                             0.59      11.53 r
+  mult_51/S1_19_0/CO (CMPR32X1)                           0.57      12.10 r
+  mult_51/S1_20_0/CO (ADDFX2)                             0.59      12.68 r
+  mult_51/S1_21_0/CO (CMPR32X1)                           0.57      13.25 r
+  mult_51/S1_22_0/CO (ADDFX2)                             0.59      13.84 r
+  mult_51/S1_23_0/CO (CMPR32X1)                           0.57      14.40 r
+  mult_51/S1_24_0/CO (ADDFX2)                             0.59      14.99 r
+  mult_51/S1_25_0/CO (CMPR32X1)                           0.57      15.56 r
+  mult_51/S1_26_0/CO (ADDFX2)                             0.59      16.14 r
+  mult_51/S1_27_0/CO (CMPR32X1)                           0.57      16.71 r
+  mult_51/S1_28_0/CO (ADDFX2)                             0.59      17.30 r
+  mult_51/S1_29_0/CO (CMPR32X1)                           0.57      17.86 r
+  mult_51/S1_30_0/S (CMPR32X1)                            0.60      18.46 f
+  mult_51/PRODUCT[30] (square_root_finder_DW02_mult_0)
+                                                          0.00      18.46 f
+  U628/Y (OR2X1)                                          0.27      18.73 f
+  U627/Y (XNOR2X1)                                        0.26      18.99 f
+  U325/Y (NOR4X1)                                         0.28      19.28 r
+  U321/Y (NAND4X1)                                        0.14      19.42 f
+  U319/Y (NOR2X1)                                         0.16      19.58 r
+  U314/Y (AOI211XL)                                       0.14      19.71 f
+  U311/Y (OAI22X1)                                        0.14      19.85 r
+  cat_reg_0_/D (DFFRXL)                                   0.00      19.85 r
+  data arrival time                                                 19.85
 
-  clock clk (rise edge)                                  50.00      50.00
-  clock network delay (ideal)                             0.00      50.00
-  state_reg_0_/CK (DFFRHQX1)                              0.00      50.00 r
-  library setup time                                     -0.37      49.63
-  data required time                                                49.63
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  cat_reg_0_/CK (DFFRXL)                                  0.00      20.00 r
+  library setup time                                     -0.13      19.87
+  data required time                                                19.87
   --------------------------------------------------------------------------
-  data required time                                                49.63
-  data arrival time                                                -20.27
+  data required time                                                19.87
+  data arrival time                                                -19.85
   --------------------------------------------------------------------------
-  slack (MET)                                                       29.36
+  slack (MET)                                                        0.02
 
 
 1
