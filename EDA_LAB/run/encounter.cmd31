@@ -1,0 +1,60 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Thu May 26 19:15:27 2016                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v10.13-s272_1 (32bit) 04/18/2012 16:36 (Linux 2.6)
+#@(#)CDS: NanoRoute v10.13-s027 NR120403-1008/10_10_USR3-UB (database version 2.30, 132.4.1) {superthreading v1.16}
+#@(#)CDS: CeltIC v10.13-s063_1 (32bit) 02/29/2012 09:38:16 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: AAE 10.13-s008 (32bit) 04/18/2012 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: CTE 10.13-s018_1 (32bit) Feb 28 2012 22:08:25 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: CPE v10.13-s225
+
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign square_root_finder2.enc.dat square_root_finder
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+setDrawView place
+setNanoRouteMode -quiet -drouteStartIteration default
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+clearClockDomains
+setClockDomains -all
+timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix square_root_finder_postCTS -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+clearClockDomains
+setClockDomains -all
+timeDesign -postCTS -hold -pathReports -slackReports -numPaths 50 -prefix square_root_finder_postCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -postCTS
+optDesign -postCTS -hold
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+clearClockDomains
+setClockDomains -all
+timeDesign -postCTS -hold -pathReports -slackReports -numPaths 50 -prefix square_root_finder_postCTS -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+clearClockDomains
+setClockDomains -all
+timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix square_root_finder_postCTS -outDir timingReports
+getFillerMode -quiet
+saveDesign square_root_finder_afterrouting_wiopt.enc
+saveDesign square_root_finder2_afterrouting_wiopt.enc
+saveDesign square_root_finder2.enc
+getFillerMode -quiet
+addFiller -cell FILL64 FILL32 FILL16 FILL8 FILL4 FILL2 FILL1 -prefix FILLER
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+clearClockDomains
+setClockDomains -all
+timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix square_root_finder_postRoute -outDir timingReports

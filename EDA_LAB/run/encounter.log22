@@ -1,0 +1,440 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 10.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter release has been compiled with OA version 22.04-p013.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2011.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v10.13-s272_1 (32bit) 04/18/2012 16:36 (Linux 2.6)
+@(#)CDS: NanoRoute v10.13-s027 NR120403-1008/10_10_USR3-UB (database version 2.30, 132.4.1) {superthreading v1.16}
+@(#)CDS: CeltIC v10.13-s063_1 (32bit) 02/29/2012 09:38:16 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: AAE 10.13-s008 (32bit) 04/18/2012 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CTE 10.13-s018_1 (32bit) Feb 28 2012 22:08:25 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CPE v10.13-s225
+--- Starting "Encounter v10.13-s272_1" on Thu May 26 15:29:37 2016 (mem=46.1M) ---
+--- Running on ws46 (x86_64 w/Linux 2.6.18-308.el5) ---
+This version was compiled on Wed Apr 18 16:36:14 PDT 2012.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD> win
+*** Memory pool thread-safe mode activated.
+<CMD> loadConfig ../scripts/gcd.conf 0
+Reading config file - ../scripts/gcd.conf
+**WARN: (ENCSYT-709):	The next major release of EDI (11.1) will use the
+Multi-Mode/Multi-Corner (MMMC) architecture exclusively for configuration and
+control of some software features. The current configuration will continue to
+work in this release. But for compatibility with the future releases you
+should migrate your design to an MMMC style configuration. You can refer to
+the What's New document for this release for additional information on the
+11.1 migration to MMMC. In addition, you can run loadConfig with the
+-showEolWarnings option to identify specific command and configuration
+options that will no longer be supported.
+<CMD> create_rc_corner -name RC_corner_max -cap_table {/home/m103/m103061630/lab/T18/SOCE/tsmc018.capTbl} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+<CMD> create_rc_corner -name RC_corner_min -cap_table {/home/m103/m103061630/lab/T18/SOCE/tsmc018.capTbl} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+<CMD> create_library_set -name lib_max -timing {/home/m103/m103061630/lab/T18/SOCE/lib/slow.lib} -si {/home/m103/m103061630/lab/T18/SOCE/celtic/slow.cdB}
+<CMD> create_library_set -name lib_min -timing {/home/m103/m103061630/lab/T18/SOCE/lib/fast.lib} -si {/home/m103/m103061630/lab/T18/SOCE/celtic/fast.cdB}
+<CMD> create_constraint_mode -name func_mode -sdc_files {../design_data/square_root_finder_syn.sdc}
+<CMD> create_delay_corner -name Delay_corner_max -library_set {lib_max} -rc_corner {RC_corner_max}
+<CMD> create_delay_corner -name Delay_corner_min -library_set {lib_min} -rc_corner {RC_corner_min}
+<CMD> create_analysis_view -name func_mode_max -constraint_mode {func_mode} -delay_corner {Delay_corner_max}
+<CMD> create_analysis_view -name func_mode_min -constraint_mode {func_mode} -delay_corner {Delay_corner_min}
+<CMD> commitConfig
+
+Loading Lef file /home/m103/m103061630/lab/T18/SOCE/lef/tsmc18_6lm_cic.lef...
+Set DBUPerIGU to M2 pitch 1320.
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /home/m103/m103061630/lab/T18/SOCE/lef/tsmc18_6lm_cic.lef at line 65026.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /home/m103/m103061630/lab/T18/SOCE/lef/tsmc18_6lm_cic.lef at line 65026.
+
+Loading Lef file /home/m103/m103061630/lab/T18/SOCE/lef/tsmc18_6lm_antenna_cic.lef...
+**WARN: (ENCLF-119):	the layer 'METAL1' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'VIA12' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'METAL2' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'VIA23' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'METAL3' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'VIA34' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'METAL4' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'VIA45' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'METAL5' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-58):	Cell 'FILL8' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'FILL64' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'FILL4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'FILL32' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'FILL2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'FILL16' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'FILL1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'RF2R1WX2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'RF1R1WX2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XOR2XL' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XOR2X4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XOR2X2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XOR2X1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XNOR2XL' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XNOR2X4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XNOR2X2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XNOR2X1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'TLATSRXL' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'TLATSRX4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'TLATSRX2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (EMS-62):	Message <ENCLF-58> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the set_message_limit <number> command.
+The message limit can be removed by using the unset_message_limit command.
+Note that setting a very large number using the set_message_limit command
+or removing the message limit using the unset_message_limit command can
+significantly increase the log file size.
+To suppress a message, use suppress_message command.
+WARNING (LEFPARS-2002): NAMESCASESENSITIVE is a required statement on LEF file with version 5.5 and earlier.
+Without NAMESCASESENSITIVE defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /home/m103/m103061630/lab/T18/SOCE/lef/tsmc18_6lm_antenna_cic.lef at line 7769.
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /home/m103/m103061630/lab/T18/SOCE/lef/tsmc18_6lm_antenna_cic.lef at line 7769.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /home/m103/m103061630/lab/T18/SOCE/lef/tsmc18_6lm_antenna_cic.lef at line 7769.
+
+Loading Lef file /home/m103/m103061630/lab/T18/SOCE/lef/tpz973gv_6lm_cic.lef...
+
+Loading Lef file /home/m103/m103061630/lab/T18/SOCE/lef/tpb973gv_6lm.lef...
+
+Loading Lef file /home/m103/m103061630/lab/T18/SOCE/lef/antenna.lef...
+**WARN: (ENCLF-200):	Pin 'AVSS' in macro 'PVSS2ANA' has no ANTENNADIFFAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'AVSS' in macro 'PVSS2ANA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'AVSS' in macro 'PVSS1ANA' has no ANTENNADIFFAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'AVSS' in macro 'PVSS1ANA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'AVDD' in macro 'PVDD2ANA' has no ANTENNADIFFAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'AVDD' in macro 'PVDD2ANA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'AVDD' in macro 'PVDD1ANA' has no ANTENNADIFFAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'AVDD' in macro 'PVDD1ANA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+
+Power Planner/ViaGen version 8.1.46 promoted on 02/17/2009.
+viaInitial starts at Thu May 26 15:30:39 2016
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM1 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM2 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM3 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM4 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM5 GENERATE
+viaInitial ends at Thu May 26 15:30:39 2016
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../design_data/square_root_finder_uniquify.v'
+
+*** Memory Usage v#1 (Current mem = 237.320M, initial mem = 46.074M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=237.3M) ***
+Set top cell to square_root_finder.
+Reading max timing library '/home/m103/m103061630/lab/T18/SOCE/lib/slow.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDHX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX2' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+No function defined for cell 'HOLDX1'. The cell will only be used for analysis.
+ read 470 cells in library 'slow' 
+Reading min timing library '/home/m103/m103061630/lab/T18/SOCE/lib/fast.lib' ...
+No function defined for cell 'HOLDX1'. The cell will only be used for analysis.
+ read 470 cells in library 'fast' 
+*** End library_loading (cpu=0.04min, mem=18.9M, fe_cpu=0.09min, fe_mem=256.2M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell square_root_finder ...
+*** Netlist is unique.
+** info: there are 1095 modules.
+** info: there are 3545 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 259.211M, initial mem = 46.074M) ***
+CTE reading timing constraint file '../design_data/square_root_finder_syn.sdc' ...
+**WARN: (TCLCMD-1013):	The SDC set_operating_conditions assertion is not supported. Please use the Encounter setOpCond command to specify library and operating condition information. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File ../design_data/square_root_finder_syn.sdc, Line 10).
+
+INFO (CTE): read_dc_script finished with  1 WARNING
+WARNING (CTE-25): Line: 8 of File ../design_data/square_root_finder_syn.sdc : Skipped unsupported command: set_units
+
+
+*** Read timing constraints (cpu=0:00:00.0 mem=260.4M) ***
+Total number of combinational cells: 265
+Total number of sequential cells: 186
+Total number of tristate cells: 18
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX1 BUFX12 BUFX16 BUFX20 BUFX3 BUFX4 BUFX8 BUFXL CLKBUFX2 CLKBUFX1 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX8 CLKBUFXL
+Total number of usable buffers: 18
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX2 CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX8 CLKINVXL INVX1 INVX2 INVX12 INVX16 INVX20 INVX3 INVXL INVX4 INVX8
+Total number of usable inverters: 18
+List of unusable inverters: RFRDX2 RFRDX1 RFRDX4
+Total number of unusable inverters: 3
+List of identified usable delay cells: DLY2X1 DLY1X1 DLY4X1 DLY3X1
+Total number of identified usable delay cells: 4
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+*info: set bottom ioPad orient R0
+Reading IO assignment file "../design_data/gcd.io" ...
+**Warn: ignored IO file "../design_data/gcd.io" line 19: Pin: out[0] N
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 20: Pin: out[1] N
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 21: Pin: out[2] N
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 22: Pin: out[3] N
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 23: Pin: out[4] N
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 24: Pin: out[5] N
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 25: Pin: out[6] N
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 26: Pin: out[7] N
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 27: Pin: out[8] N
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 28: Pin: out[9] E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 29: Pin: out[10] E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 30: Pin: out[11] E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 31: Pin: out[12] E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 32: Pin: out[13] E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 33: Pin: out[14] E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 34: Pin: out[15] E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 35: Pin: out[16] E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 36: Pin: out[17] E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 37: Pin: out[18] E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 38: Pin: out[19] E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 39: Pin: out[20] E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 40: Pin: out[21] E
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 41: Pin: out[22] S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 42: Pin: out[23] S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 43: Pin: out[24] S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 44: Pin: out[25] S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 45: Pin: out[26] S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 46: Pin: out[27] S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 47: Pin: out[28] S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 48: Pin: out[29] S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 49: Pin: out[30] S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 50: Pin: out[31] S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 52: Pin: clk[0]  S
+  Reason: unable to determine object from name.
+**Warn: ignored IO file "../design_data/gcd.io" line 53: Pin: rst[0]  S
+  Reason: unable to determine object from name.
+Adjusting Core to Left to: 5.2800. Core to Bottom to: 5.0400.
+Horizontal Layer M1 offset = 560 (derived)
+Vertical Layer M2 offset = 660 (derived)
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+PreRoute Cap Scale Factor :        1.00
+PreRoute Res Scale Factor :        1.00
+PostRoute Cap Scale Factor :       1.00
+PostRoute Res Scale Factor :       1.00
+PostRoute XCap Scale Factor :      1.00
+
+PreRoute Clock Cap Scale Factor :  1.00	[Derived from postRoute_cap (effortLevel low)]
+PreRoute Clock Res Scale Factor :  1.00	[Derived from postRoute_res (effortLevel low)]
+PostRoute Clock Cap Scale Factor : 1.00	[Derived from postRoute_cap (effortLevel low)]
+PostRoute Clock Res Scale Factor : 1.00	[Derived from postRoute_res (effortLevel low)]
+**WARN: (ENCEXT-3496):	Options '-best/-worst/-typical' specified in 'rda_Input(ui_captbl_file)' of configuration file for 'readCapTable' are obsolete. For single mode two corner analysis and optimization, use MMMC setup instead of reading multiple captables through command 'readCapTable'. The obsolete options still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script and configuration file to use MMMC.
+Reading Three Cap Table files:  -typical /home/m103/m103061630/lab/T18/SOCE/tsmc018.capTbl -best /home/m103/m103061630/lab/T18/SOCE/tsmc018.capTbl -worst /home/m103/m103061630/lab/T18/SOCE/tsmc018.capTbl  ...
+Cap Table was created using Encounter 04.10-p003_1.
+Process name: t018s5mm_rf.
+Cap Table was created using Encounter 04.10-p003_1.
+Process name: t018s5mm_rf.
+Cap Table was created using Encounter 04.10-p003_1.
+Process name: t018s5mm_rf.
+Reading EXTENDED_CAP_TABLE section completed.
+Three process corner capacitance table is used.
+Set qxlayermap_file as /home/m103/m103061630/lab/T18/SOCE/streamOut.map
+<CMD> fit
+<CMD> setDrawView fplan
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site tsm3site -r 0.991398927759 0.8 5.28 5.04 5.0 5.0
+Horizontal Layer M1 offset = 560 (derived)
+Vertical Layer M2 offset = 660 (derived)
+**WARN: (ENCFP-325):	After proportional resize, all pre-routed wires will be removed.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -module {}
+<CMD> globalNetConnect VDD -type tiehi -pin VDD -inst * -module {}
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -module {}
+<CMD> globalNetConnect VSS -type tielo -pin VSS -inst * -module {}
+Warning: term A of inst U306 is not connect to global special net.
+Warning: term A of inst U306 is not connect to global special net.
+**INFO (INTERRUPT): One more Ctrl-C to exit Encounter ...
+Encounter terminated by user interrupt.
+
+*** Memory Usage v#1 (Current mem = 262.234M, initial mem = 46.074M) ***
+--- Ending "Encounter" (totcpu=0:00:06.4, real=0:05:45, mem=262.2M) ---

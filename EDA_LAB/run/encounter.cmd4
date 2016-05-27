@@ -1,0 +1,145 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Thu May 19 18:58:32 2016                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v10.13-s272_1 (32bit) 04/18/2012 16:36 (Linux 2.6)
+#@(#)CDS: NanoRoute v10.13-s027 NR120403-1008/10_10_USR3-UB (database version 2.30, 132.4.1) {superthreading v1.16}
+#@(#)CDS: CeltIC v10.13-s063_1 (32bit) 02/29/2012 09:38:16 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: AAE 10.13-s008 (32bit) 04/18/2012 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: CTE 10.13-s018_1 (32bit) Feb 28 2012 22:08:25 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: CPE v10.13-s225
+
+win
+loadConfig ../scripts/gcd.conf 0
+getenv ENCOUNTER_CONFIG_RELATIVE_CWD
+setDoAssign
+getIoFlowFlag
+create_rc_corner -name RC_corner_max -cap_table {/home/m103/m103061630/lab/T18/SOCE/tsmc018.capTbl} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+create_rc_corner -name RC_corner_min -cap_table {/home/m103/m103061630/lab/T18/SOCE/tsmc018.capTbl} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+create_library_set -name lib_max -timing {/home/m103/m103061630/lab/T18/SOCE/lib/slow.lib} -si {/home/m103/m103061630/lab/T18/SOCE/celtic/slow.cdB}
+create_library_set -name lib_min -timing {/home/m103/m103061630/lab/T18/SOCE/lib/fast.lib} -si {/home/m103/m103061630/lab/T18/SOCE/celtic/fast.cdB}
+create_constraint_mode -name func_mode -sdc_files {../design_data/gcd_SYN.sdc}
+create_delay_corner -name Delay_corner_max -library_set {lib_max} -rc_corner {RC_corner_max}
+create_delay_corner -name Delay_corner_min -library_set {lib_min} -rc_corner {RC_corner_min}
+create_analysis_view -name func_mode_max -constraint_mode {func_mode} -delay_corner {Delay_corner_max}
+create_analysis_view -name func_mode_min -constraint_mode {func_mode} -delay_corner {Delay_corner_min}
+commitConfig
+fit
+setDrawView fplan
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site tsm3site -r 1 0.8 10 10 10 10
+uiSetTool select
+getIoFlowFlag
+fit
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst * -module {}
+globalNetConnect VDD -type tiehi -pin VDD -inst * -module {}
+globalNetConnect VSS -type pgpin -pin VSS -inst * -module {}
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst * -module {}
+globalNetConnect VDD -type tiehi -pin VDD -inst * -module {}
+globalNetConnect VSS -type pgpin -pin VSS -inst * -module {}
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst * -module {}
+globalNetConnect VDD -type tiehi -pin VDD -inst * -module {}
+globalNetConnect VSS -type pgpin -pin VSS -inst * -module {}
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -inst * -module {}
+globalNetConnect VDD -type tiehi -pin VDD -inst * -module {}
+globalNetConnect VSS -type pgpin -pin VSS -inst * -module {}
+addRing -tl 1 -lt 1 -use_wire_group_bits 2 -spacing_bottom 0.28 -width_left 0.28 -width_bottom 0.28 -tr 1 -width_top 0.28 -use_interleaving_wire_group 1 -spacing_top 0.28 -layer_bottom METAL5 -center 1 -stacked_via_top_layer METAL5 -width_right 0.28 -use_wire_group 1 -around core -jog_distance 0.56 -offset_bottom 0.56 -bl 1 -layer_top METAL5 -br 1 -rb 1 -threshold 0.56 -offset_left 0.56 -spacing_right 0.28 -lb 1 -spacing_left 0.28 -offset_right 0.56 -rt 1 -offset_top 0.56 -layer_right METAL4 -nets {VDD VSS} -stacked_via_bottom_layer METAL1 -layer_left METAL4
+addRing -tl 1 -lt 1 -use_wire_group_bits 2 -spacing_bottom 0.28 -width_left 2 -width_bottom 2 -tr 1 -width_top 2 -use_interleaving_wire_group 1 -spacing_top 0.28 -layer_bottom METAL5 -center 1 -stacked_via_top_layer METAL5 -width_right 2 -use_wire_group 1 -around core -jog_distance 0.56 -offset_bottom 0.56 -bl 1 -layer_top METAL5 -br 1 -rb 1 -threshold 0.56 -offset_left 0.56 -spacing_right 0.28 -lb 1 -spacing_left 0.28 -offset_right 0.56 -rt 1 -offset_top 0.56 -layer_right METAL4 -nets {VDD VSS} -stacked_via_bottom_layer METAL1 -layer_left METAL4
+selectWire 0.8600 4.0600 2.8600 86.6200 4 VSS
+deselectAll
+selectWire 0.8600 4.0600 2.8600 86.6200 4 VSS
+deleteSelectedFromFPlan
+selectWire 5.4200 0.0000 5.7000 90.6400 4 VSS
+deleteSelectedFromFPlan
+windowSelect 3.192 94.477 7.633 -9.783
+deleteSelectedFromFPlan
+windowSelect -11.550 92.878 104.077 82.754
+deleteSelectedFromFPlan
+windowSelect 85.073 99.094 100.880 -7.296
+deleteSelectedFromFPlan
+windowSelect -5.511 10.110 102.124 -6.053
+deleteSelectedFromFPlan
+addRing -tl 1 -lt 1 -use_wire_group_bits 2 -spacing_bottom 0.28 -width_left 2 -width_bottom 2 -tr 1 -width_top 2 -use_interleaving_wire_group 1 -spacing_top 0.28 -layer_bottom METAL5 -center 1 -stacked_via_top_layer METAL5 -width_right 2 -use_wire_group 1 -around core -jog_distance 0.56 -offset_bottom 0.56 -bl 1 -layer_top METAL5 -br 1 -rb 1 -threshold 0.56 -offset_left 0.56 -spacing_right 0.28 -lb 1 -spacing_left 0.28 -offset_right 0.56 -rt 1 -offset_top 0.56 -layer_right METAL4 -nets {VDD VSS} -stacked_via_bottom_layer METAL1 -layer_left METAL4
+addRing -tl 1 -lt 1 -use_wire_group_bits 2 -spacing_bottom 0.28 -width_left 2 -width_bottom 2 -tr 1 -width_top 2 -use_interleaving_wire_group 1 -spacing_top 0.28 -layer_bottom METAL5 -center 1 -stacked_via_top_layer METAL5 -width_right 2 -use_wire_group 1 -around core -jog_distance 0.56 -offset_bottom 0.56 -bl 1 -layer_top METAL5 -br 1 -rb 1 -threshold 0.56 -offset_left 0.56 -spacing_right 0.28 -lb 1 -spacing_left 0.28 -offset_right 0.56 -rt 1 -offset_top 0.56 -layer_right METAL4 -nets {VDD VSS} -stacked_via_bottom_layer METAL1 -layer_left METAL4
+panPage 1 0
+panPage 0 1
+panPage -1 0
+panPage -1 0
+panPage 0 -1
+fit
+saveDesign Floorplan.enc
+sroute -connect { corePin } -layerChangeRange { METAL1 METAL5 } -blockPinTarget { nearestTarget } -checkAlignedSecondaryPin 1 -allowJogging 1 -crossoverViaBottomLayer METAL1 -allowLayerChange 1 -targetViaTopLayer METAL5 -crossoverViaTopLayer METAL5 -targetViaBottomLayer METAL1 -nets { VSS VDD }
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+deselectAll
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+setDrawView place
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setDrawView ameba
+setDrawView place
+setDrawView fplan
+setDrawView place
+addTieHiLo -cell {TIEHI TIELO} -prefix LTIE
+createClockTreeSpec -bufferList {CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX2 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX8 CLKINVXL} -file Clock.ctstch
+clockDesign -specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+clearClockDomains
+setClockDomains -all
+timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix gcd_preCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+clearClockDomains
+setClockDomains -all
+timeDesign -preCTS -hold -idealClock -pathReports -slackReports -numPaths 50 -prefix gcd_preCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -postCTS
+optDesign -postCTS -hold
+setNanoRouteMode -quiet -drouteStartIteration default
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+getFillerMode -quiet
+addFiller -cell FILL64 FILL32 FILL16 FILL8 FILL4 FILL2 FILL1 -prefix FILLER
+selectWire 0.0000 83.5000 97.1700 85.5000 5 VSS
+deselectAll
+undo
+redo
+undo
+redo
+undo
+redo
+getFillerMode -quiet
+deleteFiller -cell FILL64 FILL32 FILL16 FILL8 FILL4 FILL2 FILL1
+getFillerMode -quiet
+addFiller -cell FILL64 FILL32 FILL16 FILL8 FILL4 FILL2 FILL1 -prefix FILLER
+addMetalFill -layer { METAL1 METAL2 METAL3 METAL4 METAL5 } -nets { VSS VDD }
+verifyGeometry
+verifyConnectivity -help
+verifyConnectivity -type all -error 10000 -warning 50
+verifyProcessAntenna -help
+verifyProcessAntenna -report gcd.antenna.rpt -leffile gcd.antenna.lef -error 1000
+verifyProcessAntenna -report gcd.antenna.rpt -leffile gcd.a~~~~~lef -error 1000
+verifyProcessAntenna -report gcd.antenna.rpt -leffile gcd.antenna.lef -error 1000
+saveNetlist ../post_sim/gcd-sim.v
+saveNetlist gcd_lvs.v -hlp
+saveNetlist gcd_lvs.v -includePowerGround
+write_sdf ../post_sim/gcd.sdf
+streamOut gcd.gds -help
+streamOut gcd.gds -mapFile /home/m103/m103061630/lab/T18/SOCE/streamOut.map -libName DesignLib -structureName gcd -stripes 1 -units 1000 -mode
+lefOut gcd.lef

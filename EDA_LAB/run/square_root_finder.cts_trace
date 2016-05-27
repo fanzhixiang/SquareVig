@@ -1,0 +1,145 @@
+
+
+
+
+
+Tracing Clock clk
+
+****** Clock Tree (clk) Structure
+Nr. Subtrees                   : 1
+Nr. Sinks                      : 96
+Nr.          Rising  Sync Pins : 96
+Nr. Inverter Rising  Sync Pins : 0
+Nr.          Falling Sync Pins : 0
+Nr. Inverter Falling Sync Pins : 0
+
+** Leaf Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+DFFSRHQX1 (CK)                          15
+DFFSRXL (CK)                            1
+DFFRHQX1 (CK)                           74
+DFFRHQX4 (CK)                           3
+DFFRXL (CK)                             3
+-----------------------------------------------
+
+
+
+
+** Gate Component Input Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+-----------------------------------------------
+
+
+
+** Subtree Detail
+*DEPTH 0 Input_Pin: (EMPTY) Output_Pin: (clk) Cell: (EMPTY) Net: (clk) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 96
+          Nr. of     Rising  Sync Pins  : 96
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+***********************************************************
+
+****** Pre CTS Detail Structure for clock clk
+*DEPTH 0: clk
+ (Sync)up_reg_30_/CK
+ (Sync)up_reg_28_/CK
+ (Sync)up_reg_29_/CK
+ (Sync)low_reg_30_/CK
+ (Sync)low_reg_28_/CK
+ (Sync)low_reg_29_/CK
+ (Sync)up_reg_24_/CK
+ (Sync)up_reg_25_/CK
+ (Sync)up_reg_26_/CK
+ (Sync)up_reg_27_/CK
+ (Sync)low_reg_24_/CK
+ (Sync)low_reg_25_/CK
+ (Sync)low_reg_26_/CK
+ (Sync)low_reg_27_/CK
+ (Sync)cat_reg_0_/CK
+ (Sync)state_reg_0_/CK
+ (Sync)up_reg_22_/CK
+ (Sync)up_reg_23_/CK
+ (Sync)low_reg_19_/CK
+ (Sync)low_reg_20_/CK
+ (Sync)low_reg_21_/CK
+ (Sync)low_reg_22_/CK
+ (Sync)low_reg_23_/CK
+ (Sync)up_reg_20_/CK
+ (Sync)low_reg_15_/CK
+ (Sync)low_reg_16_/CK
+ (Sync)low_reg_17_/CK
+ (Sync)low_reg_18_/CK
+ (Sync)up_reg_16_/CK
+ (Sync)up_reg_17_/CK
+ (Sync)up_reg_18_/CK
+ (Sync)up_reg_19_/CK
+ (Sync)low_reg_11_/CK
+ (Sync)low_reg_12_/CK
+ (Sync)low_reg_13_/CK
+ (Sync)low_reg_14_/CK
+ (Sync)up_reg_12_/CK
+ (Sync)up_reg_13_/CK
+ (Sync)up_reg_14_/CK
+ (Sync)up_reg_15_/CK
+ (Sync)low_reg_7_/CK
+ (Sync)low_reg_8_/CK
+ (Sync)low_reg_9_/CK
+ (Sync)low_reg_10_/CK
+ (Sync)up_reg_7_/CK
+ (Sync)up_reg_8_/CK
+ (Sync)up_reg_9_/CK
+ (Sync)up_reg_10_/CK
+ (Sync)up_reg_11_/CK
+ (Sync)up_reg_3_/CK
+ (Sync)up_reg_4_/CK
+ (Sync)up_reg_5_/CK
+ (Sync)low_reg_2_/CK
+ (Sync)low_reg_3_/CK
+ (Sync)low_reg_4_/CK
+ (Sync)low_reg_5_/CK
+ (Sync)low_reg_6_/CK
+ (Sync)up_reg_6_/CK
+ (Sync)low_reg_0_/CK
+ (Sync)up_reg_0_/CK
+ (Sync)up_reg_1_/CK
+ (Sync)up_reg_2_/CK
+ (Sync)low_reg_1_/CK
+ (Sync)g_reg_30_/CK
+ (Sync)g_reg_24_/CK
+ (Sync)g_reg_25_/CK
+ (Sync)g_reg_26_/CK
+ (Sync)g_reg_27_/CK
+ (Sync)g_reg_28_/CK
+ (Sync)g_reg_29_/CK
+ (Sync)g_reg_13_/CK
+ (Sync)g_reg_14_/CK
+ (Sync)g_reg_15_/CK
+ (Sync)g_reg_16_/CK
+ (Sync)g_reg_17_/CK
+ (Sync)g_reg_18_/CK
+ (Sync)g_reg_19_/CK
+ (Sync)g_reg_20_/CK
+ (Sync)g_reg_21_/CK
+ (Sync)g_reg_22_/CK
+ (Sync)g_reg_23_/CK
+ (Sync)g_reg_6_/CK
+ (Sync)g_reg_7_/CK
+ (Sync)g_reg_8_/CK
+ (Sync)g_reg_9_/CK
+ (Sync)g_reg_10_/CK
+ (Sync)g_reg_11_/CK
+ (Sync)g_reg_12_/CK
+ (Sync)g_reg_0_/CK
+ (Sync)g_reg_1_/CK
+ (Sync)g_reg_2_/CK
+ (Sync)g_reg_3_/CK
+ (Sync)g_reg_4_/CK
+ (Sync)g_reg_5_/CK
+ (Sync)up_reg_21_/CK
+ (Sync)state_reg_1_/CK

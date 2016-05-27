@@ -1,0 +1,6 @@
+define LIB_MAP ( $LIB_MAP \
+, ../../../../../../../m103061630/lab/T18/Verilog/tsmc18.v => tsmc18 \
+)
+define LIB_MAP ( $LIB_MAP \
+, ../../../../../../../m103061630/lab/T18/Verilog/tsmc18.v => tsmc18 \
+)

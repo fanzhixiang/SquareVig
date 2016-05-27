@@ -1,0 +1,74 @@
+
+
+
+
+
+Tracing Clock clk
+
+****** Clock Tree (clk) Structure
+Nr. Subtrees                   : 1
+Nr. Sinks                      : 27
+Nr.          Rising  Sync Pins : 27
+Nr. Inverter Rising  Sync Pins : 0
+Nr.          Falling Sync Pins : 0
+Nr. Inverter Falling Sync Pins : 0
+
+** Leaf Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+DFFRXL (CK)                             1
+DFFXL (CK)                              16
+DFFRHQX1 (CK)                           10
+-----------------------------------------------
+
+
+
+
+** Gate Component Input Pins
+CELL (PORT)                            Nr.
+-----------------------------------------------
+-----------------------------------------------
+
+
+
+** Subtree Detail
+*DEPTH 0 Input_Pin: (EMPTY) Output_Pin: (clk) Cell: (EMPTY) Net: (clk) NO-INV
+          Nr. of Exclude Pins           : 0
+          Nr. of Unsync Pins            : 0
+          Nr. of Total Sync Pins        : 27
+          Nr. of     Rising  Sync Pins  : 27
+          Nr. of Inv Rising  Sync Pins  : 0
+          Nr. of     Falling Sync Pins  : 0
+          Nr. of Inv Falling Sync Pins  : 0
+          Nr. of Gated Clocks           : 0
+***********************************************************
+
+****** Pre CTS Detail Structure for clock clk
+*DEPTH 0: clk
+ (Sync)state_reg_1_/CK
+ (Sync)out_reg_7_/CK
+ (Sync)out_reg_6_/CK
+ (Sync)out_reg_1_/CK
+ (Sync)out_reg_2_/CK
+ (Sync)out_reg_3_/CK
+ (Sync)out_reg_4_/CK
+ (Sync)out_reg_5_/CK
+ (Sync)out_reg_0_/CK
+ (Sync)done_reg/CK
+ (Sync)state_reg_0_/CK
+ (Sync)B_reg_7_/CK
+ (Sync)B_reg_6_/CK
+ (Sync)B_reg_5_/CK
+ (Sync)B_reg_4_/CK
+ (Sync)B_reg_3_/CK
+ (Sync)B_reg_2_/CK
+ (Sync)B_reg_1_/CK
+ (Sync)B_reg_0_/CK
+ (Sync)A_reg_7_/CK
+ (Sync)A_reg_6_/CK
+ (Sync)A_reg_5_/CK
+ (Sync)A_reg_4_/CK
+ (Sync)A_reg_3_/CK
+ (Sync)A_reg_2_/CK
+ (Sync)A_reg_1_/CK
+ (Sync)A_reg_0_/CK

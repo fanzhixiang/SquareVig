@@ -1,0 +1,1570 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 10.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter release has been compiled with OA version 22.04-p013.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2011.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v10.13-s272_1 (32bit) 04/18/2012 16:36 (Linux 2.6)
+@(#)CDS: NanoRoute v10.13-s027 NR120403-1008/10_10_USR3-UB (database version 2.30, 132.4.1) {superthreading v1.16}
+@(#)CDS: CeltIC v10.13-s063_1 (32bit) 02/29/2012 09:38:16 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: AAE 10.13-s008 (32bit) 04/18/2012 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CTE 10.13-s018_1 (32bit) Feb 28 2012 22:08:25 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CPE v10.13-s225
+--- Starting "Encounter v10.13-s272_1" on Thu May 26 19:29:37 2016 (mem=46.1M) ---
+--- Running on ws34 (x86_64 w/Linux 2.6.18-274.17.1.el5) ---
+This version was compiled on Wed Apr 18 16:36:14 PDT 2012.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD> win
+*** Memory pool thread-safe mode activated.
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Reading config file - square_root_finder2.enc.dat/square_root_finder.conf
+**WARN: (ENCLF-119):	the layer 'METAL1' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'VIA12' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'METAL2' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'VIA23' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'METAL3' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'VIA34' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'METAL4' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'VIA45' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-119):	the layer 'METAL5' has been defined, the content other than the antenna data will be ignored.
+**WARN: (ENCLF-58):	Cell 'FILL8' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'FILL64' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'FILL4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'FILL32' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'FILL2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'FILL16' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'FILL1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'RF2R1WX2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'RF1R1WX2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XOR2XL' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XOR2X4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XOR2X2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XOR2X1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XNOR2XL' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XNOR2X4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XNOR2X2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'XNOR2X1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'TLATSRXL' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'TLATSRX4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'TLATSRX2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (EMS-62):	Message <ENCLF-58> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the set_message_limit <number> command.
+The message limit can be removed by using the unset_message_limit command.
+Note that setting a very large number using the set_message_limit command
+or removing the message limit using the unset_message_limit command can
+significantly increase the log file size.
+To suppress a message, use suppress_message command.
+**WARN: (ENCLF-200):	Pin 'AVSS' in macro 'PVSS2ANA' has no ANTENNADIFFAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'AVSS' in macro 'PVSS2ANA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'AVSS' in macro 'PVSS1ANA' has no ANTENNADIFFAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'AVSS' in macro 'PVSS1ANA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'AVDD' in macro 'PVDD2ANA' has no ANTENNADIFFAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'AVDD' in macro 'PVDD2ANA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'AVDD' in macro 'PVDD1ANA' has no ANTENNADIFFAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'AVDD' in macro 'PVDD1ANA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA attribute defined.
+For any non-power/ground input or inout pin, The attribute should be
+defined if any area ratio antenna attribute is defined on any layer.
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM1 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM2 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM3 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM4 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNM5 GENERATE
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDHX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX2' is not defined in the library.
+*** End library_loading (cpu=0.04min, mem=19.0M, fe_cpu=0.10min, fe_mem=258.9M) ***
+square_root_finder
+**WARN: (ENCEXT-3496):	Options '-best/-worst/-typical' specified in 'rda_Input(ui_captbl_file)' of configuration file for 'readCapTable' are obsolete. For single mode two corner analysis and optimization, use MMMC setup instead of reading multiple captables through command 'readCapTable'. The obsolete options still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script and configuration file to use MMMC.
+**WARN: (ENCDB-2078):	Output pin Y of instance LTIE_LTIELO is connected to ground net sqrt[31].  This can create a short circuit if the output is 1.  Check the connectivity in the netlist.
+**WARN: (ENCDB-2078):	Output pin Y of instance LTIE_LTIELO is connected to ground net sqrt[31].  This can create a short circuit if the output is 1.  Check the connectivity in the netlist.
+Set qxlayermap_file as /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/streamOut.map
+Loading preference file square_root_finder2.enc.dat/enc.pref.tcl ...
+Loading mode file square_root_finder2.enc.dat/square_root_finder.mode ...
+**WARN: (ENCOPT-3058):	Cell fast/ADDFHX1 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell slow/ADDFHX1 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell fast/ADDFHXL has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell slow/ADDFHXL has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell fast/ADDFX1 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell slow/ADDFX1 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell fast/ADDFXL has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell slow/ADDFXL has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell fast/ADDHX1 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell slow/ADDHX1 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell fast/ADDHXL has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell slow/ADDHXL has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell fast/AFCSHCINX2 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell slow/AFCSHCINX2 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell fast/AFCSHCINX4 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell slow/AFCSHCINX4 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell fast/AFCSHCONX2 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell slow/AFCSHCONX2 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell fast/AFCSHCONX4 has already a dont_use attribute false.
+**WARN: (ENCOPT-3058):	Cell slow/AFCSHCONX4 has already a dont_use attribute false.
+**WARN: (EMS-62):	Message <ENCOPT-3058> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the set_message_limit <number> command.
+The message limit can be removed by using the unset_message_limit command.
+Note that setting a very large number using the set_message_limit command
+or removing the message limit using the unset_message_limit command can
+significantly increase the log file size.
+To suppress a message, use suppress_message command.
+**WARN: (ENCDB-2078):	Output pin Y of instance LTIE_LTIELO is connected to ground net sqrt[31].  This can create a short circuit if the output is 1.  Check the connectivity in the netlist.
+loading place ...
+**WARN: (ENCDB-2078):	Output pin Y of instance LTIE_LTIELO is connected to ground net sqrt[31].  This can create a short circuit if the output is 1.  Check the connectivity in the netlist.
+loading route ...
+**WARN: (ENCSYT-709):	The next major release of EDI (11.1) will use the
+Multi-Mode/Multi-Corner (MMMC) architecture exclusively for configuration and
+control of some software features. The current configuration will continue to
+work in this release. But for compatibility with the future releases you
+should migrate your design to an MMMC style configuration. You can refer to
+the What's New document for this release for additional information on the
+11.1 migration to MMMC. In addition, you can run restoreDesign with the
+-showEolWarnings option to identify specific command and configuration
+options that will no longer be supported.
+<CMD> setDrawView place
+<CMD_INTERNAL> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> clearClockDomains
+<CMD> setClockDomains -all
+setClockDomains -all 
+**WARN: (ENCSYC-1873):	The setClockDomains -all option is unsupported in CTE mode 
+<CMD> timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix square_root_finder_postRoute -outDir timingReports
+Extraction called for design 'square_root_finder' of instances=3550 and nets=5075 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Detail RC Extraction called for design square_root_finder.
+Process corner(s) are loaded.
+Loading corner...  Typical_Case : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+Loading corner...  Best_Case    : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+Loading corner...  Worst_Case   : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+extractDetailRC Option : -outfile ./square_root_finder_l8MDpI_6507.rcdb.d  -3Corners
+RC Mode: Detail [Extended CapTable, RC Table Resistances, 3 Process Corners]
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res. Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 279.0M)
+Creating parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d/header.da' in memory efficient access mode for storing RC.
+Extracted 10.007% (CPU Time= 0:00:00.1  MEM= 286.1M)
+Extracted 20.0094% (CPU Time= 0:00:00.1  MEM= 287.2M)
+Extracted 30.007% (CPU Time= 0:00:00.1  MEM= 287.2M)
+Extracted 40.0094% (CPU Time= 0:00:00.1  MEM= 287.2M)
+Extracted 50.007% (CPU Time= 0:00:00.2  MEM= 287.2M)
+Extracted 60.0094% (CPU Time= 0:00:00.2  MEM= 287.2M)
+Extracted 70.007% (CPU Time= 0:00:00.2  MEM= 287.2M)
+Extracted 80.0094% (CPU Time= 0:00:00.3  MEM= 287.2M)
+Extracted 90.007% (CPU Time= 0:00:00.3  MEM= 287.2M)
+Extracted 100% (CPU Time= 0:00:00.3  MEM= 287.2M)
+Nr. Extracted Resistors     : 48448
+Nr. Extracted Ground Cap.   : 53327
+Nr. Extracted Coupling Cap. : 0
+Opening parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d/header.da' for reading.
+Detail RC Extraction DONE (CPU Time: 0:00:00.4  Real Time: 0:00:00.0  MEM: 279.105M)
+**WARN: (ENCTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation.  You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound'.
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):| -0.065  | -0.065  | 12.019  |   N/A   |   N/A   |   N/A   |
+|           TNS (ns):| -0.065  | -0.065  |  0.000  |   N/A   |   N/A   |   N/A   |
+|    Violating Paths:|    1    |    1    |    0    |   N/A   |   N/A   |   N/A   |
+|          All Paths:|   208   |   96    |   130   |   N/A   |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 81.018%
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.59 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 307.75 Mbytes
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+<CMD> optDesign -postRoute
+Disable merging buffers from different footprints for postRoute code for non-MSV designs
+COE opt is not supported in non AAE mode. Reverting to non COE postroute flow
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 308.3M **
+#Created 619 library cell signatures
+#Created 5075 NETS and 0 SPECIALNETS signatures
+#Created 3551 instance signatures
+Begin checking placement ... (start mem=308.6M, init mem=309.1M)
+*info: Placed = 3541
+*info: Unplaced = 0
+Placement Density:81.02%(134965/166586)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=308.6M)
+Setting latch borrow mode to budget during optimization.
+setExtractRCMode -coupled false
+**WARN: (ENCEXT-3493):	Extraction mode changed by calling extraction setup command 'setExtractRCMode'. Therefore, parasitic data in the tool generated as per previous mode is deleted. Call of extractRC/spefIn will generate/bring parasitic data in the tool as per current mode.
+*** optDesign -postRoute ***
+DRC Margin: user margin 0.4; extra margin 0
+Setup Target Slack: user slack 0.2
+Hold Target Slack: user slack 0.0
+*info: Setting setup target slack to 0.200
+*info: Hold target slack is 0.000
+**INFO : Adding temp dont-use cells (LVT only flow version : 4)
+Creating information for LVT Only Flow
+Include MVT Delays for Hold Opt
+Num of Buffers    : 26
+Num of Inverters  : 18
+Num of VTs        : 2
+Multi-VT timing optimization disabled based on library information.
+Deleting the dont_use list
+Extraction called for design 'square_root_finder' of instances=3550 and nets=5075 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Detail RC Extraction called for design square_root_finder.
+Process corner(s) are loaded.
+Loading corner...  Typical_Case : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+Loading corner...  Best_Case    : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+Loading corner...  Worst_Case   : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+extractDetailRC Option : -outfile ./square_root_finder_l8MDpI_6507.rcdb.d -maxResLength 200  -3Corners
+RC Mode: Detail [Extended CapTable, RC Table Resistances, 3 Process Corners]
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res. Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 299.8M)
+Closing parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d'. 4955 times net's RC data read were performed.
+Creating parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d/header.da' in memory efficient access mode for storing RC.
+Extracted 10.007% (CPU Time= 0:00:00.1  MEM= 300.8M)
+Extracted 20.0094% (CPU Time= 0:00:00.1  MEM= 301.8M)
+Extracted 30.007% (CPU Time= 0:00:00.1  MEM= 301.8M)
+Extracted 40.0094% (CPU Time= 0:00:00.1  MEM= 301.8M)
+Extracted 50.007% (CPU Time= 0:00:00.2  MEM= 301.8M)
+Extracted 60.0094% (CPU Time= 0:00:00.2  MEM= 301.8M)
+Extracted 70.007% (CPU Time= 0:00:00.2  MEM= 301.8M)
+Extracted 80.0094% (CPU Time= 0:00:00.3  MEM= 301.8M)
+Extracted 90.007% (CPU Time= 0:00:00.3  MEM= 301.8M)
+Extracted 100% (CPU Time= 0:00:00.3  MEM= 301.8M)
+Nr. Extracted Resistors     : 48448
+Nr. Extracted Ground Cap.   : 53327
+Nr. Extracted Coupling Cap. : 0
+Opening parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d/header.da' for reading.
+Detail RC Extraction DONE (CPU Time: 0:00:00.4  Real Time: 0:00:00.0  MEM: 296.699M)
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 301.7M, InitMEM = 301.7M)
+Start delay calculation (mem=301.711M)...
+delayCal using detail RC...
+Opening parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d/header.da' for reading.
+RC Database In Completed (CPU Time= 0:00:00.0  MEM= 305.7M)
+Delay calculation completed. (cpu=0:00:00.5 real=0:00:01.0 mem=309.090M 0)
+*** CDM Built up (cpu=0:00:00.7  real=0:00:01.0  mem= 309.1M) ***
+-holdSdfFile {}                            # string, default=""
+-holdSdfScript {}                          # string, default="", private
+
+------------------------------------------------------------
+             Initial Summary                             
+------------------------------------------------------------
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):| -0.065  |
+|           TNS (ns):| -0.065  |
+|    Violating Paths:|    1    |
+|          All Paths:|   208   |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 81.018%
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:02, real = 0:00:02, mem = 309.7M **
+*** Timing NOT met, worst failing slack is -0.065
+*** Check timing (0:00:00.0)
+*** Timing NOT met, worst failing slack is -0.065
+*** Check timing (0:00:00.0)
+Info: 10 clock nets excluded from IPO operation.
+
+*** Start Post Route Setup Fixing (cpu=0:00:00.0 mem=309.7M) ***
+
+Time Engine : CTE
+SSTA Mode   : off
+MMMC mode   : off
+Incr. DC    : on
+Incr POM Mode        : on
+On Demand POM Mode   : on
+CTE SubNetWork Mode   : on
+Up Size     : on
+Down Size   : on
+Resize FFs  : on
+Add Buffer  : off
+Del Buffer  : off
+Pin Swap    : off
+Add InvPair : off
+LegalLoc GS : off
+Speedup  GS : off
+Crit. Range : 20%
+
+density before = 81.018%
+total 4946 net, 0 ipo_ignored
+total 13647 term, 0 ipo_ignored
+total 3454 comb inst, 9 fixed, 1 dont_touch, 0 no_footp
+total 96 seq inst, 0 fixed, 0 dont_touch, 0 no_footp
+total 116 footprint(s)
+   5 footprint(s) with 0 cell(s)
+   2 footprint(s) with 1 cell(s)
+   9 footprint(s) with 2 cell(s)
+   2 footprint(s) with 3 cell(s)
+  92 footprint(s) with 4 cell(s)
+   1 footprint(s) with 5 cell(s)
+   0 footprint(s) with 6 cell(s)
+   0 footprint(s) with 7 cell(s)
+   1 footprint(s) with 8 cell(s)
+   2 footprint(s) with 9 cell(s)
+   2 footprint(s) with 10+ cell(s)
+
+
+Estimated WNS = -0.265ns, TNS = -0.448ns (targetSlack +0.200ns) (cpu=0:00:00.1 mem=311.0M)
+
+Iter 0 ...
+
+Collected 904 nets for fixing
+Evaluate 334(305) resize, Select 220 cand. (cpu=0:00:05.5 mem=312.8M)
+
+Commit 39 cand, 38 upSize, 0 downSize, 1 sameSize, 0 addBuf, 0 delBuf, 0 pinSwap (cpu=0:00:07.8 mem=314.8M)
+
+Calc. DC (cpu=0:00:07.9 mem=314.8M) ***
+
+Estimated WNS = -0.036ns, TNS = -0.062ns (targetSlack +0.200ns) (cpu=0:00:07.9 mem=314.8M)
+
+Iter 1 ...
+
+Collected 168 nets for fixing
+Evaluate 399(294) resize, Select 213 cand. (cpu=0:00:20.2 mem=315.0M)
+
+Commit 3 cand, 3 upSize, 0 downSize, 0 sameSize, 0 addBuf, 0 delBuf, 0 pinSwap (cpu=0:00:21.9 mem=316.1M)
+
+Calc. DC (cpu=0:00:21.9 mem=316.1M) ***
+
+Estimated WNS = 0.019ns, TNS = 0.000ns (targetSlack +0.200ns) (cpu=0:00:21.9 mem=316.1M)
+
+Calc. DC (cpu=0:00:21.9 mem=316.1M) ***
+*summary:     42 instances changed cell type
+density after = 82.045%
+
+*** Finish Post Route Setup Fixing (cpu=0:00:21.9 mem=315.9M) ***
+
+Info: 10 clock nets excluded from IPO operation.
+
+*** Start Post Route Setup Fixing (cpu=0:00:00.0 mem=315.9M) ***
+
+Time Engine : CTE
+SSTA Mode   : off
+MMMC mode   : off
+Incr. DC    : on
+Incr POM Mode        : on
+On Demand POM Mode   : on
+CTE SubNetWork Mode   : on
+Up Size     : on
+Down Size   : on
+Resize FFs  : on
+Add Buffer  : on
+Del Buffer  : on
+Pin Swap    : off
+Add InvPair : off
+LegalLoc GS : off
+Speedup  GS : off
+Crit. Range : 20%
+
+density before = 82.045%
+total 4946 net, 0 ipo_ignored
+total 13647 term, 0 ipo_ignored
+total 3454 comb inst, 9 fixed, 1 dont_touch, 0 no_footp
+total 96 seq inst, 0 fixed, 0 dont_touch, 0 no_footp
+total 116 footprint(s)
+   5 footprint(s) with 0 cell(s)
+   2 footprint(s) with 1 cell(s)
+   9 footprint(s) with 2 cell(s)
+   2 footprint(s) with 3 cell(s)
+  92 footprint(s) with 4 cell(s)
+   1 footprint(s) with 5 cell(s)
+   0 footprint(s) with 6 cell(s)
+   0 footprint(s) with 7 cell(s)
+   1 footprint(s) with 8 cell(s)
+   2 footprint(s) with 9 cell(s)
+   2 footprint(s) with 10+ cell(s)
+
+BUFFER FOOTPRINT (BUFX2) :
+  BUFXL(s) BUFX1 CLKBUFX1 CLKBUFXL CLKBUFX2
+  BUFX2 CLKBUFX3 BUFX3 CLKBUFX4 BUFX4
+  CLKBUFX8 BUFX8 BUFX12 BUFX16 CLKBUFX12
+  BUFX20 CLKBUFX16 CLKBUFX20
+
+DELAY FOOTPRINT (DLY2X1) :
+  DLY4X1 DLY3X1 DLY2X1 DLY1X1
+
+
+Estimated WNS = 0.019ns, TNS = 0.000ns (targetSlack +0.200ns) (cpu=0:00:00.1 mem=315.9M)
+*summary:      0 instances changed cell type
+density after = 82.045%
+
+*** Finish Post Route Setup Fixing (cpu=0:00:00.2 mem=315.9M) ***
+
+*** Timing Is met
+*** Check timing (0:00:00.0)
+Starting refinePlace ...
+  Spread Effort: high, post-route mode.
+Finished Phase I. CPU Time = 0:00:00.2, Real Time = 0:00:01.0
+move report: preRPlace moves 370 insts, mean move: 2.96 um, max move: 11.88 um
+	max move on inst (mult_51/S1_25_0): (236.28, 171.36) --> (248.16, 171.36)
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 370 insts, mean move: 2.96 um, max move: 11.88 um
+	max move on inst (mult_51/S1_25_0): (236.28, 171.36) --> (248.16, 171.36)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        11.88 um
+  inst (mult_51/S1_25_0) with max move: (236.28, 171.36) -> (248.16, 171.36)
+  mean    (X+Y) =         2.96 um
+Total instances moved : 370
+*** cpu=0:00:00.2   mem=315.9M  mem(used)=0.0M***
+Total net length = 1.280e+05 (6.610e+04 6.191e+04) (ext = 2.000e+04)
+default core: bins with density >  0.75 = 73.6 % ( 53 / 72 )
+
+------------------------------------------------------------
+     Summary (cpu=0.38min real=0.38min mem=315.9M)                             
+------------------------------------------------------------
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):|  0.219  |
+|           TNS (ns):|  0.000  |
+|    Violating Paths:|    0    |
+|          All Paths:|   208   |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 82.045%
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:24, real = 0:00:25, mem = 315.9M **
+*** Timing Is met
+*** Check timing (0:00:00.0)
+-routeWithEco false                      # bool, default=false, user setting
+-routeWithEco true                       # bool, default=false, user setting
+-routeSelectedNetOnly false              # bool, default=false
+-routeWithTimingDriven false             # bool, default=false, user setting
+-routeWithSiDriven false                 # bool, default=false, user setting
+-drouteStartIteration 0                  # int, default=0, user setting
+-drouteStartIteration 0                  # int, default=0
+
+globalDetailRoute
+
+#Start globalDetailRoute on Thu May 26 19:33:27 2016
+#
+Closing parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d'. 4955 times net's RC data read were performed.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 312.00 (Mb)
+#WARNING (NRDB-728) PIN AVSS in CELL_VIEW PVSS2ANA does not have antenna diff area.
+#WARNING (NRDB-728) PIN AVSS in CELL_VIEW PVSS1ANA does not have antenna diff area.
+#WARNING (NRDB-728) PIN AVDD in CELL_VIEW PVDD2ANA does not have antenna diff area.
+#WARNING (NRDB-728) PIN AVDD in CELL_VIEW PVDD1ANA does not have antenna diff area.
+#WARNING (NRDB-976) The step 0.560000 for preferred direction tracks is smaller than the pitch 1.120000 for LAYER METAL5. This will cause routability problems for NanoRoute.
+#NanoRoute Version v10.13-s027 NR120403-1008/10_10_USR3-UB
+#Loading the last recorded routing design signature
+#Summary of the placement changes since last routing:
+#  Number of instances added (including moved) = 339
+#  Number of instances deleted (including moved) = 339
+#  Number of instances resized = 29
+#  Number of instances with different orientation = 3
+#  Total number of placement changes (moved instances are counted twice) = 710
+# METAL1       H   Track-Pitch = 0.560    Line-2-Via Pitch = 0.485
+# METAL2       V   Track-Pitch = 0.660    Line-2-Via Pitch = 0.560
+# METAL3       H   Track-Pitch = 0.560    Line-2-Via Pitch = 0.560
+# METAL4       V   Track-Pitch = 0.660    Line-2-Via Pitch = 0.560
+# METAL5       H   Track-Pitch = 0.560    Line-2-Via Pitch = 0.560
+#Merging special wires...
+#Number of eco nets is 0
+#
+#Start data preparation...
+#Force regenerating Ggrids.
+#Auto generating G-grids with size=15 tracks, using layer METAL2's pitch = 0.660.
+#Using automatically generated G-grids.
+#
+#Data preparation is done on Thu May 26 19:33:29 2016
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Thu May 26 19:33:29 2016
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H         756           0        1892    74.15%
+#  Metal 2        V         657           0        1892     0.26%
+#  Metal 3        H         756           0        1892     0.00%
+#  Metal 4        V         657           0        1892     2.27%
+#  Metal 5        H         744          12        1892     4.65%
+#  --------------------------------------------------------------
+#  Total                   3570       0.32%  9460    16.27%
+#
+#  10 nets (0.20%) with 1 preferred extra spacing.
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 353.00 (Mb)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 357.00 (Mb)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 358.00 (Mb)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 358.00 (Mb)
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon       OverCon       OverCon       OverCon          
+#                  #Gcell        #Gcell        #Gcell        #Gcell    %Gcell
+#     Layer           (1)           (2)           (3)           (4)   OverCon
+#  --------------------------------------------------------------------------
+#   Metal 1      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 2      3(0.16%)      2(0.11%)      3(0.16%)      1(0.05%)   (0.48%)
+#   Metal 3      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  --------------------------------------------------------------------------
+#     Total      3(0.04%)      2(0.02%)      3(0.04%)      1(0.01%)   (0.11%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 4
+#
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 10
+#Total wire length = 145365 um.
+#Total half perimeter of net bounding box = 131950 um.
+#Total wire length on LAYER METAL1 = 186 um.
+#Total wire length on LAYER METAL2 = 50448 um.
+#Total wire length on LAYER METAL3 = 69399 um.
+#Total wire length on LAYER METAL4 = 20916 um.
+#Total wire length on LAYER METAL5 = 4415 um.
+#Total number of vias = 19489
+#Up-Via Summary (total 19489):
+#           
+#-----------------------
+#  Metal 1        10611
+#  Metal 2         7832
+#  Metal 3          968
+#  Metal 4           78
+#-----------------------
+#                 19489 
+#
+#Max overcon = 4 tracks.
+#Total overcon = 0.11%.
+#Worst layer Gcell overcon rate = 0.00%.
+#Cpu time = 00:00:02
+#Elapsed time = 00:00:02
+#Increased memory = 15.00 (Mb)
+#Total memory = 355.00 (Mb)
+#Peak memory = 386.00 (Mb)
+#
+#Start Detail Routing...
+#start initial detail routing ...
+# ECO: 0.0% of the total area was rechecked for DRC, and 100.0% required routing.
+#    number of violations = 0
+#cpu time = 00:00:13, elapsed time = 00:00:13, memory = 360.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#    number of process antenna violations = 55
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 360.00 (Mb)
+#start 2nd optimization iteration ...
+#    number of violations = 0
+#    number of process antenna violations = 24
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 360.00 (Mb)
+#start 3rd optimization iteration ...
+#    number of violations = 0
+#    number of process antenna violations = 22
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 360.00 (Mb)
+#start 4th optimization iteration ...
+#    number of violations = 0
+#    number of process antenna violations = 14
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 360.00 (Mb)
+#start 5th optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 360.00 (Mb)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 10
+#Total wire length = 153749 um.
+#Total half perimeter of net bounding box = 131950 um.
+#Total wire length on LAYER METAL1 = 5679 um.
+#Total wire length on LAYER METAL2 = 54824 um.
+#Total wire length on LAYER METAL3 = 70468 um.
+#Total wire length on LAYER METAL4 = 18697 um.
+#Total wire length on LAYER METAL5 = 4082 um.
+#Total number of vias = 26625
+#Up-Via Summary (total 26625):
+#           
+#-----------------------
+#  Metal 1        13726
+#  Metal 2        11635
+#  Metal 3         1140
+#  Metal 4          124
+#-----------------------
+#                 26625 
+#
+#Total number of DRC violations = 0
+#Total number of violations on LAYER METAL1 = 0
+#Total number of violations on LAYER METAL2 = 0
+#Total number of violations on LAYER METAL3 = 0
+#Total number of violations on LAYER METAL4 = 0
+#Total number of violations on LAYER METAL5 = 0
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 370.00 (Mb)
+#
+#Total number of nets with non-default rule or having extra spacing = 10
+#Total wire length = 153759 um.
+#Total half perimeter of net bounding box = 131950 um.
+#Total wire length on LAYER METAL1 = 5679 um.
+#Total wire length on LAYER METAL2 = 54824 um.
+#Total wire length on LAYER METAL3 = 70449 um.
+#Total wire length on LAYER METAL4 = 18697 um.
+#Total wire length on LAYER METAL5 = 4111 um.
+#Total number of vias = 26661
+#Up-Via Summary (total 26661):
+#           
+#-----------------------
+#  Metal 1        13726
+#  Metal 2        11635
+#  Metal 3         1142
+#  Metal 4          158
+#-----------------------
+#                 26661 
+#
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#Total number of violations on LAYER METAL1 = 0
+#Total number of violations on LAYER METAL2 = 0
+#Total number of violations on LAYER METAL3 = 0
+#Total number of violations on LAYER METAL4 = 0
+#Total number of violations on LAYER METAL5 = 0
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:14
+#Elapsed time = 00:00:14
+#Increased memory = 15.00 (Mb)
+#Total memory = 370.00 (Mb)
+#Peak memory = 386.00 (Mb)
+#Updating routing design signature
+#Created 619 library cell signatures
+#Created 5075 NETS and 0 SPECIALNETS signatures
+#Created 3551 instance signatures
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:18
+#Elapsed time = 00:00:17
+#Increased memory = 48.00 (Mb)
+#Total memory = 363.00 (Mb)
+#Peak memory = 386.00 (Mb)
+#Number of warnings = 5
+#Total number of warnings = 5
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Thu May 26 19:33:44 2016
+#
+**optDesign ... cpu = 0:00:42, real = 0:00:42, mem = 363.9M **
+-routeWithEco false                      # bool, default=false, user setting
+-routeSelectedNetOnly false              # bool, default=false
+-routeWithTimingDriven false             # bool, default=false, user setting
+-routeWithSiDriven false                 # bool, default=false, user setting
+-drouteStartIteration 0                  # int, default=0, user setting
+Extraction called for design 'square_root_finder' of instances=3550 and nets=5075 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Detail RC Extraction called for design square_root_finder.
+Process corner(s) are loaded.
+Loading corner...  Typical_Case : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+Loading corner...  Best_Case    : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+Loading corner...  Worst_Case   : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+extractDetailRC Option : -outfile ./square_root_finder_l8MDpI_6507.rcdb.d -maxResLength 200  -3Corners
+RC Mode: Detail [Extended CapTable, RC Table Resistances, 3 Process Corners]
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res. Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 363.9M)
+Creating parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d/header.da' in memory efficient access mode for storing RC.
+Extracted 10.0066% (CPU Time= 0:00:00.1  MEM= 364.0M)
+Extracted 20.0087% (CPU Time= 0:00:00.1  MEM= 364.0M)
+Extracted 30.0066% (CPU Time= 0:00:00.1  MEM= 364.0M)
+Extracted 40.0087% (CPU Time= 0:00:00.2  MEM= 364.0M)
+Extracted 50.0066% (CPU Time= 0:00:00.2  MEM= 364.0M)
+Extracted 60.0087% (CPU Time= 0:00:00.2  MEM= 364.0M)
+Extracted 70.0066% (CPU Time= 0:00:00.2  MEM= 364.0M)
+Extracted 80.0087% (CPU Time= 0:00:00.3  MEM= 364.0M)
+Extracted 90.0066% (CPU Time= 0:00:00.3  MEM= 364.0M)
+Extracted 100% (CPU Time= 0:00:00.4  MEM= 364.0M)
+Nr. Extracted Resistors     : 49671
+Nr. Extracted Ground Cap.   : 54618
+Nr. Extracted Coupling Cap. : 0
+Opening parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d/header.da' for reading.
+Detail RC Extraction DONE (CPU Time: 0:00:00.4  Real Time: 0:00:01.0  MEM: 363.863M)
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 365.6M, InitMEM = 365.6M)
+Start delay calculation (mem=365.617M)...
+delayCal using detail RC...
+Opening parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d/header.da' for reading.
+RC Database In Completed (CPU Time= 0:00:00.0  MEM= 367.7M)
+Delay calculation completed. (cpu=0:00:00.5 real=0:00:01.0 mem=367.695M 0)
+*** CDM Built up (cpu=0:00:00.7  real=0:00:01.0  mem= 367.7M) ***
+*** Timing Is met
+*** Check timing (0:00:00.0)
+Latch borrow mode reset to max_borrow
+Reported timing to dir ./timingReports
+**optDesign ... cpu = 0:00:44, real = 0:00:44, mem = 367.7M **
+
+------------------------------------------------------------
+     optDesign Final Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):|  0.234  |  0.234  | 12.031  |   N/A   |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |   N/A   |   N/A   |   N/A   |
+|    Violating Paths:|    0    |    0    |    0    |   N/A   |   N/A   |   N/A   |
+|          All Paths:|   208   |   96    |   130   |   N/A   |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 82.045%
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:44, real = 0:00:45, mem = 367.7M **
+*** Finished optDesign ***
+<CMD> optDesign -postRoute -hold
+Disable merging buffers from different footprints for postRoute code for non-MSV designs
+COE opt is not supported in non AAE mode. Reverting to non COE postroute flow
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 367.7M **
+#Created 619 library cell signatures
+#Created 5075 NETS and 0 SPECIALNETS signatures
+#Created 3551 instance signatures
+Begin checking placement ... (start mem=377.8M, init mem=377.7M)
+*info: Placed = 3541
+*info: Unplaced = 0
+Placement Density:82.04%(136675/166586)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=377.7M)
+setExtractRCMode -coupled false
+**WARN: (ENCEXT-3493):	Extraction mode changed by calling extraction setup command 'setExtractRCMode'. Therefore, parasitic data in the tool generated as per previous mode is deleted. Call of extractRC/spefIn will generate/bring parasitic data in the tool as per current mode.
+*** optDesign -postRoute ***
+DRC Margin: user margin 0.4; extra margin 0
+Setup Target Slack: user slack 0.2
+Hold Target Slack: user slack 0.0
+*info: Setting setup target slack to 0.200
+*info: Hold target slack is 0.000
+Creating information for LVT Only Flow
+Include MVT Delays for Hold Opt
+Deleting the dont_use list
+Extraction called for design 'square_root_finder' of instances=3550 and nets=5075 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Detail RC Extraction called for design square_root_finder.
+Process corner(s) are loaded.
+Loading corner...  Typical_Case : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+Loading corner...  Best_Case    : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+Loading corner...  Worst_Case   : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+extractDetailRC Option : -outfile ./square_root_finder_l8MDpI_6507.rcdb.d -maxResLength 200  -3Corners
+RC Mode: Detail [Extended CapTable, RC Table Resistances, 3 Process Corners]
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res. Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 377.7M)
+Closing parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d'. 4955 times net's RC data read were performed.
+Creating parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d/header.da' in memory efficient access mode for storing RC.
+Extracted 10.0066% (CPU Time= 0:00:00.1  MEM= 377.8M)
+Extracted 20.0087% (CPU Time= 0:00:00.1  MEM= 377.8M)
+Extracted 30.0066% (CPU Time= 0:00:00.1  MEM= 377.8M)
+Extracted 40.0087% (CPU Time= 0:00:00.2  MEM= 377.8M)
+Extracted 50.0066% (CPU Time= 0:00:00.2  MEM= 377.8M)
+Extracted 60.0087% (CPU Time= 0:00:00.2  MEM= 377.8M)
+Extracted 70.0066% (CPU Time= 0:00:00.2  MEM= 377.8M)
+Extracted 80.0087% (CPU Time= 0:00:00.3  MEM= 377.8M)
+Extracted 90.0066% (CPU Time= 0:00:00.3  MEM= 377.8M)
+Extracted 100% (CPU Time= 0:00:00.4  MEM= 377.8M)
+Nr. Extracted Resistors     : 49671
+Nr. Extracted Ground Cap.   : 54618
+Nr. Extracted Coupling Cap. : 0
+Opening parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d/header.da' for reading.
+Detail RC Extraction DONE (CPU Time: 0:00:00.4  Real Time: 0:00:01.0  MEM: 375.621M)
+*info: All cells identified as Buffer and Delay cells:
+*info: --------------------------------------------------
+*info:            DLY4X1         -   fast
+*info:            DLY3X1         -   fast
+*info:            DLY2X1         -   fast
+*info:            DLY1X1         -   fast
+*info:             BUFXL         -   fast
+*info:             BUFX1         -   fast
+*info:          CLKBUFX1         -   fast
+*info:          CLKBUFXL         -   fast
+*info:          CLKBUFX2         -   fast
+*info:             BUFX2         -   fast
+*info:          CLKBUFX3         -   fast
+*info:             BUFX3         -   fast
+*info:          CLKBUFX4         -   fast
+*info:             BUFX4         -   fast
+*info:          CLKBUFX8         -   fast
+*info:             BUFX8         -   fast
+*info:            BUFX12         -   fast
+*info:            BUFX16         -   fast
+*info:         CLKBUFX12         -   fast
+*info:            BUFX20         -   fast
+*info:         CLKBUFX16         -   fast
+*info:         CLKBUFX20         -   fast
+-holdSdfFile {}                            # string, default=""
+-holdSdfScript {}                          # string, default="", private
+Opening parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d/header.da' for reading.
+RC Database In Completed (CPU Time= 0:00:00.0  MEM= 373.9M)
+*** Started fixing hold violations - preprocessing (CPU=0:00:00.0, REAL=0:00:00.0, totSessionCpu=0:00:55.3, mem=373.9M)
+Setting analysis mode to hold ...
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 378.9M, InitMEM = 378.9M)
+Start delay calculation (mem=378.949M)...
+*** Calculating scaling factor for min libraries using the default operating condition of each library.
+delayCal using detail RC...
+Delay calculation completed. (cpu=0:00:00.4 real=0:00:00.0 mem=378.949M 0)
+*** CDM Built up (cpu=0:00:00.6  real=0:00:00.0  mem= 378.9M) ***
+--------------------------------------------------- 
+   Hold Violation Summary with Target Slack 
+--------------------------------------------------- 
+ Target slack: 0.000 ns
+ Worst Slack : 0.000 ns 
+ TNS         : 0.000 ns 
+ Viol paths  : 0 
+ Max Local density  : 0.980 
+--------------------------------------------------- 
+*** Started fixing hold violations, collecting hold timing for buffering (CPU=0:00:00.9, REAL=0:00:01.0, totSessionCpu=0:00:56.2, mem=378.9M)
+*** Hold timing met, No need to fix hold violation 
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 378.9M, InitMEM = 378.9M)
+Start delay calculation (mem=378.949M)...
+*** Calculating scaling factor for max libraries using the default operating condition of each library.
+delayCal using detail RC...
+Delay calculation completed. (cpu=0:00:00.4 real=0:00:00.0 mem=378.949M 0)
+*** CDM Built up (cpu=0:00:00.6  real=0:00:00.0  mem= 378.9M) ***
+**optDesign ... cpu = 0:00:03, real = 0:00:02, mem = 378.9M **
+Reported timing to dir ./timingReports
+**optDesign ... cpu = 0:00:03, real = 0:00:02, mem = 378.9M **
+
+------------------------------------------------------------
+     optDesign Final Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):|  0.234  |  0.234  | 12.031  |   N/A   |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |   N/A   |   N/A   |   N/A   |
+|    Violating Paths:|    0    |    0    |    0    |   N/A   |   N/A   |   N/A   |
+|          All Paths:|   208   |   96    |   130   |   N/A   |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):|  0.028  |  0.204  |  0.028  |   N/A   |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |   N/A   |   N/A   |   N/A   |
+|    Violating Paths:|    0    |    0    |    0    |   N/A   |   N/A   |   N/A   |
+|          All Paths:|   208   |   96    |   130   |   N/A   |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 82.045%
+------------------------------------------------------------
+*** Final Summary (holdfix) CPU=0:00:01.2, REAL=0:00:02.0, TOTCPU=0:00:02.8, TOTREAL=0:00:03.0, MEM=374.1M
+**optDesign ... cpu = 0:00:04, real = 0:00:04, mem = 373.9M **
+*** Finished optDesign ***
+<CMD_INTERNAL> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> clearClockDomains
+<CMD> setClockDomains -all
+setClockDomains -all 
+**WARN: (ENCSYC-1873):	The setClockDomains -all option is unsupported in CTE mode 
+<CMD> timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix square_root_finder_postRoute -outDir timingReports
+**WARN: (ENCEXT-3493):	Extraction mode changed by calling extraction setup command 'setExtractRCMode'. Therefore, parasitic data in the tool generated as per previous mode is deleted. Call of extractRC/spefIn will generate/bring parasitic data in the tool as per current mode.
+Extraction called for design 'square_root_finder' of instances=3550 and nets=5075 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Detail RC Extraction called for design square_root_finder.
+Process corner(s) are loaded.
+Loading corner...  Typical_Case : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+Loading corner...  Best_Case    : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+Loading corner...  Worst_Case   : /home/m103/m103061608/SquareVig/EDA_LAB/run/../../../../m103061630/lab/T18/SOCE/tsmc018.capTbl
+extractDetailRC Option : -outfile ./square_root_finder_l8MDpI_6507.rcdb.d -maxResLength 200  -3Corners
+RC Mode: Detail [Extended CapTable, RC Table Resistances, 3 Process Corners]
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res. Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 373.9M)
+Closing parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d'. 4955 times net's RC data read were performed.
+Creating parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d/header.da' in memory efficient access mode for storing RC.
+Extracted 10.0066% (CPU Time= 0:00:00.1  MEM= 374.0M)
+Extracted 20.0087% (CPU Time= 0:00:00.1  MEM= 374.0M)
+Extracted 30.0066% (CPU Time= 0:00:00.1  MEM= 374.0M)
+Extracted 40.0087% (CPU Time= 0:00:00.2  MEM= 374.0M)
+Extracted 50.0066% (CPU Time= 0:00:00.2  MEM= 374.0M)
+Extracted 60.0087% (CPU Time= 0:00:00.2  MEM= 374.0M)
+Extracted 70.0066% (CPU Time= 0:00:00.2  MEM= 374.0M)
+Extracted 80.0087% (CPU Time= 0:00:00.3  MEM= 374.0M)
+Extracted 90.0066% (CPU Time= 0:00:00.3  MEM= 374.0M)
+Extracted 100% (CPU Time= 0:00:00.4  MEM= 374.0M)
+Nr. Extracted Resistors     : 49671
+Nr. Extracted Ground Cap.   : 54618
+Nr. Extracted Coupling Cap. : 0
+Opening parasitic data file './square_root_finder_l8MDpI_6507.rcdb.d/header.da' for reading.
+Detail RC Extraction DONE (CPU Time: 0:00:00.4  Real Time: 0:00:01.0  MEM: 373.867M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):|  0.234  |  0.234  | 12.031  |   N/A   |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |   N/A   |   N/A   |   N/A   |
+|    Violating Paths:|    0    |    0    |    0    |   N/A   |   N/A   |   N/A   |
+|          All Paths:|   208   |   96    |   130   |   N/A   |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 82.045%
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.48 sec
+Total Real time: 2.0 sec
+Total Memory Usage: 377.699219 Mbytes
+<CMD> saveDesign square_root_finder2_afterrouting_wiopt.enc
+Redoing specifyClockTree ...
+Checking spec file integrity...
+**WARN: (ENCSYT-3036):	Design directory square_root_finder2_afterrouting_wiopt.enc.dat exists, rename it to square_root_finder2_afterrouting_wiopt.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "square_root_finder2_afterrouting_wiopt.enc.dat/square_root_finder.v.gz" ...
+Saving clock tree spec file 'square_root_finder2_afterrouting_wiopt.enc.dat/square_root_finder.ctstch' ...
+Saving configuration ...
+Saving preference file square_root_finder2_afterrouting_wiopt.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=397.9M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.1 real=0:00:00.0 mem=397.9M) ***
+Writing DEF file 'square_root_finder2_afterrouting_wiopt.enc.dat/square_root_finder.def.gz', current time is Thu May 26 19:35:10 2016 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'square_root_finder2_afterrouting_wiopt.enc.dat/square_root_finder.def.gz' is written, current time is Thu May 26 19:35:10 2016 ...
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+No integration constraint in the design.
+<CMD> getFillerMode -quiet
+<CMD> addFiller -cell FILL64 FILL32 FILL16 FILL8 FILL4 FILL2 FILL1 -prefix FILLER
+*INFO: Adding fillers to top-module.
+*INFO:   Added 6 filler insts (cell FILL64 / prefix FILLER).
+*INFO:   Added 30 filler insts (cell FILL32 / prefix FILLER).
+*INFO:   Added 54 filler insts (cell FILL16 / prefix FILLER).
+*INFO:   Added 203 filler insts (cell FILL8 / prefix FILLER).
+*INFO:   Added 528 filler insts (cell FILL4 / prefix FILLER).
+*INFO:   Added 828 filler insts (cell FILL2 / prefix FILLER).
+*INFO:   Added 1392 filler insts (cell FILL1 / prefix FILLER).
+*INFO: Total 3041 filler insts added - prefix FILLER (CPU: 0:00:00.1).
+For 3041 new insts, *** Applied 2 GNC rules (cpu = 0:00:00.0)
+*INFO: Checking for DRC violations on added fillers.
+*INFO: Iteration 0-#1, Found 0 DRC violation  (real: 0:00:01.0).
+*INFO: Adding fillers to top-module.
+*INFO:   Added 0 filler inst of any cell-type.
+For 0 new insts, *** Applied 0 GNC rules.
+*INFO: End DRC Checks. (real: 0:00:01.0 ).
+<CMD> addMetalFill -layer { METAL1 METAL2 METAL3 METAL4 METAL5 } -nets { VSS VDD }
+************************
+Timing Aware on 
+P/G Nets: 3
+Signal Nets: 5062
+Clock Nets: 10
+************************
+Density calculation ...... Slot :   1 of   1
+Density calculation ...... Slot :   1 of   1
+End of Density Calculation : cpu time : 0:00:04.2, real time : 0:00:05.0, peak mem : 441.60 megs
+process data during iteration   1 in region   0 of 9.
+process data during iteration   1 in region   1 of 9.
+process data during iteration   1 in region   2 of 9.
+process data during iteration   1 in region   3 of 9.
+process data during iteration   1 in region   4 of 9.
+process data during iteration   1 in region   5 of 9.
+process data during iteration   1 in region   6 of 9.
+process data during iteration   1 in region   7 of 9.
+process data during iteration   1 in region   8 of 9.
+End metal filling: cpu:  0:00:05.7,  real:  0:00:06.0,  peak mem:  441.60  megs.
+<CMD> saveDesign square_root_finder2.enc
+Redoing specifyClockTree ...
+Checking spec file integrity...
+**WARN: (ENCSYT-3036):	Design directory square_root_finder2.enc.dat exists, rename it to square_root_finder2.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "square_root_finder2.enc.dat/square_root_finder.v.gz" ...
+Saving clock tree spec file 'square_root_finder2.enc.dat/square_root_finder.ctstch' ...
+Saving configuration ...
+Saving preference file square_root_finder2.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=437.0M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.1 real=0:00:00.0 mem=437.0M) ***
+Writing DEF file 'square_root_finder2.enc.dat/square_root_finder.def.gz', current time is Thu May 26 19:38:43 2016 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'square_root_finder2.enc.dat/square_root_finder.def.gz' is written, current time is Thu May 26 19:38:43 2016 ...
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+No integration constraint in the design.
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 437.1) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 7040
+  VERIFY GEOMETRY ...... SubArea : 1 of 9
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 1 complete 0 Viols. 0 Wrngs.
+  VERIFY GEOMETRY ...... SubArea : 2 of 9
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 2 complete 0 Viols. 0 Wrngs.
+  VERIFY GEOMETRY ...... SubArea : 3 of 9
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 3 complete 0 Viols. 0 Wrngs.
+  VERIFY GEOMETRY ...... SubArea : 4 of 9
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 4 complete 0 Viols. 0 Wrngs.
+  VERIFY GEOMETRY ...... SubArea : 5 of 9
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 5 complete 0 Viols. 0 Wrngs.
+  VERIFY GEOMETRY ...... SubArea : 6 of 9
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 6 complete 0 Viols. 0 Wrngs.
+  VERIFY GEOMETRY ...... SubArea : 7 of 9
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 7 complete 0 Viols. 0 Wrngs.
+  VERIFY GEOMETRY ...... SubArea : 8 of 9
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 8 complete 0 Viols. 0 Wrngs.
+  VERIFY GEOMETRY ...... SubArea : 9 of 9
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 9 complete 0 Viols. 0 Wrngs.
+VG: elapsed time: 3.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:03.1  MEM: 9.7M)
+
+<CMD> verifyConnectivity -type all -error 10000 -warning 50
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Thu May 26 19:40:25 2016
+
+Design Name: square_root_finder
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (433.7750, 423.2800)
+Error Limit = 10000; Warning Limit = 50
+Check all nets
+Net in[13]: Found a geometry with bounding box (-0.14,422.55) (0.14,423.28) outside design boundary.
+Violations for such geometries will be reported.
+Net in[12]: Found a geometry with bounding box (0.00,423.13) (0.73,423.42) outside design boundary.
+Violations for such geometries will be reported.
+Net in[0]: Found a geometry with bounding box (0.00,-0.14) (0.73,0.14) outside design boundary.
+Violations for such geometries will be reported.
+Net sqrt[31]: Found a geometry with bounding box (433.63,0.00) (433.92,0.73) outside design boundary.
+Violations for such geometries will be reported.
+Net sqrt[22]: Found a geometry with bounding box (-0.14,0.00) (0.14,0.73) outside design boundary.
+Violations for such geometries will be reported.
+Net sqrt[21]: Found a geometry with bounding box (433.05,423.13) (433.78,423.42) outside design boundary.
+Violations for such geometries will be reported.
+Net sqrt[9]: Found a geometry with bounding box (433.05,-0.14) (433.78,0.14) outside design boundary.
+Violations for such geometries will be reported.
+Net sqrt[8]: Found a geometry with bounding box (433.63,422.55) (433.92,423.28) outside design boundary.
+Violations for such geometries will be reported.
+**** 19:40:25 **** Processed 5000 nets (Total 5075)
+Time Elapsed: 0:00:00.0
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Thu May 26 19:40:25 2016
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.6  MEM: 0.062M)
+
+<CMD> saveDesign square_root_finder2.enc
+Redoing specifyClockTree ...
+Checking spec file integrity...
+**WARN: (ENCSYT-3036):	Design directory square_root_finder2.enc.dat exists, rename it to square_root_finder2.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "square_root_finder2.enc.dat/square_root_finder.v.gz" ...
+Saving clock tree spec file 'square_root_finder2.enc.dat/square_root_finder.ctstch' ...
+Saving configuration ...
+Saving preference file square_root_finder2.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=437.3M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.1 real=0:00:00.0 mem=437.3M) ***
+Writing DEF file 'square_root_finder2.enc.dat/square_root_finder.def.gz', current time is Thu May 26 19:40:42 2016 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'square_root_finder2.enc.dat/square_root_finder.def.gz' is written, current time is Thu May 26 19:40:42 2016 ...
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+No integration constraint in the design.
+<CMD> verifyProcessAntenna -report gcd.antenna.rpt -leffile gcd.antenna.lef -error 1000
+
+******* START VERIFY ANTENNA ********
+Report File: gcd.antenna.rpt
+**WARN: (ENCVPA-55):	Option -leffile for command verifyProcessAntenna is obsolete. Just use 'lefOut -5.5 | -5.6 fileName'. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove -leffile from your script.
+LEF Macro File: gcd.antenna.lef
+5000 nets processed: 0 violations
+Verification Complete: 0 Violations
+******* DONE VERIFY ANTENNA ********
+(CPU Time: 0:00:00.5  MEM: 0.000M)
+
+<CMD> saveNetlist ../post_sim/square_root_finder_sim.v
+Writing Netlist "../post_sim/square_root_finder_sim.v" ...
+<CMD> saveNetlist square_root_finder_lvs.v -includePowerGround
+Writing Netlist "square_root_finder_lvs.v" ...
+Warning (Quiet mode): There are 1 nets not connected to  global special net.
+**WARN: (ENCVL-503):	Logical pg nets are not connected to global pg nets.
+Pwr name (VDD).
+Gnd name (VSS).
+1 Pwr names and 1 Gnd names.
+<CMD> write_sdf ../post_sim/square_root_finder.sdf
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Topological Sorting (CPU = 0:00:00.0, MEM = 435.6M, InitMEM = 435.6M)
+Start delay calculation (mem=435.590M)...
+delayCal using detail RC...
+Delay calculation completed. (cpu=0:00:00.5 real=0:00:00.0 mem=435.590M 0)
+Topological Sorting (CPU = 0:00:00.0, MEM = 435.6M, InitMEM = 435.6M)
+Start delay calculation (mem=435.590M)...
+delayCal using detail RC...
+Delay calculation completed. (cpu=0:00:00.4 real=0:00:01.0 mem=435.590M 0)
+*** CDM Built up (cpu=0:00:01.1  real=0:00:02.0  mem= 435.6M) ***
+<CMD> streamOut gcd.gds -mapFile
+
+Usage: streamOut [-help] <gdsFileName> [-mapFile <string>] [-libName <string>]
+                 [-noStructureName] [-structureName <string>] [-units <integer>]
+                 [-mode <string>] [-stripes <integer>] [-outputMacros]
+                 [-dieAreaAsBoundary] [-attachInstanceName <integer>]
+                 [-attachNetName <integer>] [-merge <string>]
+                 [-uniquifyCellNames] [-reportFile <string>] [-offset {x y}]
+
+**ERROR: (ENCTCM-6):	Missing string value for option "-mapFile".  
+
+child process exited abnormally
+<CMD> streamOut square_root_finder.gds -mapFile /home/m103/m103061630/lab/T18/SOCE/streamOut.map -libName DesignLib -structureName square_root_finder -stripes 1 -units 1000 -mode ALL
+Parse map file...
+Writing GDSII file ...
+	****** db unit per micron = 2000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 0.5 ******
+**WARN: (ENCOGDS-250):	specified units is smaller than the one in db - you may have rounding problems
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    16                            METAL1
+    40                            METAL1
+    17                             VIA12
+    18                            METAL2
+    41                            METAL2
+    27                             VIA23
+    28                            METAL3
+    42                            METAL3
+    29                             VIA34
+    31                            METAL4
+    43                            METAL4
+    32                             VIA45
+    33                            METAL5
+    44                            METAL5
+    16                            METAL1
+    40                            METAL1
+    18                            METAL2
+    41                            METAL2
+    28                            METAL3
+    42                            METAL3
+    31                            METAL4
+    43                            METAL4
+    33                            METAL5
+    44                            METAL5
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                           6591
+
+Ports/Pins                            82
+    metal layer METAL2                22
+    metal layer METAL3                28
+    metal layer METAL4                16
+    metal layer METAL5                16
+
+Nets                               22878
+    metal layer METAL1              3199
+    metal layer METAL2             11112
+    metal layer METAL3              7700
+    metal layer METAL4               774
+    metal layer METAL5                93
+
+    Via Instances                  26661
+
+Special Nets                         271
+    metal layer METAL1               243
+    metal layer METAL3                 6
+    metal layer METAL4                 8
+    metal layer METAL5                14
+
+    Via Instances                   1004
+
+Metal Fills                        19766
+    metal layer METAL1               387
+    metal layer METAL2              6670
+    metal layer METAL3              4852
+    metal layer METAL4              3999
+    metal layer METAL5              3858
+
+    Via Instances                  18916
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                5040
+    metal layer METAL1              1407
+    metal layer METAL2              1941
+    metal layer METAL3              1614
+    metal layer METAL4                59
+    metal layer METAL5                19
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+######Streamout is finished!
+<CMD> lefOut square_root_finder.lef
+<CMD> do_extract_model  square_root_finder.lib
+Using new Cte TW Api base...#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 90nm
+# Analysis Mode: non-MMMC non-OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=default signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to feDC
+#################################################################################
+Topological Sorting (CPU = 0:00:00.0, MEM = 435.6M, InitMEM = 435.6M)
+Start delay calculation (mem=435.590M)...
+delayCal using detail RC...
+Delay calculation completed. (cpu=0:00:00.4 real=0:00:00.0 mem=435.590M 0)
+Topological Sorting (CPU = 0:00:00.0, MEM = 435.6M, InitMEM = 435.6M)
+Start delay calculation (mem=435.590M)...
+delayCal using detail RC...
+Delay calculation completed. (cpu=0:00:00.4 real=0:00:00.0 mem=435.590M 0)
+*** CDM Built up (cpu=0:00:01.0  real=0:00:01.0  mem= 435.6M) ***
+Extracting timing model for cell 'square_root_finder' of library 'square_root_
+finder' into .lib file square_root_finder.lib...
+Timing model has been successfully extracted.  To report timing on the model, please use '-check_clocks' option in report_timing.  This is because timing checks tend to get mapped to boundary ports (especially clock ports) in the model.  'report_timing -check_clocks' considers clock paths that end at the reference end of a timing check and will lead to better timing violation correlation with the original netlist.
+TAMODEL Cpu User Time =    3.7 sec
+TAMODEL Memory Usage  =    1.1 MB
+
+*** Memory Usage v#1 (Current mem = 436.730M, initial mem = 46.066M) ***
+--- Ending "Encounter" (totcpu=0:01:23, real=0:25:42, mem=436.7M) ---

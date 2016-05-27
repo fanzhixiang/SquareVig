@@ -1,0 +1,303 @@
+ncverilog: 11.10-s072: (c) Copyright 1995-2013 Cadence Design Systems, Inc.
+TOOL:	ncverilog	11.10-s072: Started on May 26, 2016 at 21:06:11 CST
+ncverilog
+	testbench.v
+	square_root_finder_sim.v
+	-v
+	/home/m103/m103061630/lab/T18/Verilog/tsmc18.v
+	+access+r
+Recompiling... reason: file './testbench.v' is newer than expected.
+	expected: Thu May 26 21:05:17 2016
+	actual:   Thu May 26 21:06:09 2016
+file: testbench.v
+	module worklib.testbench:v
+		errors: 0, warnings: 0
+		Caching library 'tsmc18' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+   DFFRXL cat_reg_0_ (.RN(FE_OFN6_rst), 
+                   |
+ncelab: *W,CUVWSP (./square_root_finder_sim.v,17800|19): 1 output port was not connected:
+ncelab: (/home/m103/m103061630/lab/T18/Verilog/tsmc18.v,7850): QN
+
+   DFFRXL state_reg_0_ (.RN(FE_OFN6_rst), 
+                     |
+ncelab: *W,CUVWSP (./square_root_finder_sim.v,17804|21): 1 output port was not connected:
+ncelab: (/home/m103/m103061630/lab/T18/Verilog/tsmc18.v,7850): QN
+
+	Reading SDF file from location "./square_root_finder.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     square_root_finder.sdf.X
+		Log file:              
+		Backannotation scope:  testbench.square_root_finder1
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.low_reg_24_ of module DFFRHQX1 <./square_root_finder.sdf, line 8931>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_24_ of module DFFRHQX1 <./square_root_finder.sdf, line 8932>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.1826)) of instance testbench.square_root_finder1.cat_reg_0_ of module DFFRXL <./square_root_finder.sdf, line 8952>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.cat_reg_0_ of module DFFRXL <./square_root_finder.sdf, line 8953>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.1826)) of instance testbench.square_root_finder1.state_reg_0_ of module DFFRXL <./square_root_finder.sdf, line 8982>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.state_reg_0_ of module DFFRXL <./square_root_finder.sdf, line 8983>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.low_reg_19_ of module DFFRHQX1 <./square_root_finder.sdf, line 9003>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_19_ of module DFFRHQX1 <./square_root_finder.sdf, line 9004>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.low_reg_20_ of module DFFRHQX1 <./square_root_finder.sdf, line 9024>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_20_ of module DFFRHQX1 <./square_root_finder.sdf, line 9025>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.low_reg_21_ of module DFFRHQX1 <./square_root_finder.sdf, line 9045>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_21_ of module DFFRHQX1 <./square_root_finder.sdf, line 9046>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.low_reg_15_ of module DFFRHQX1 <./square_root_finder.sdf, line 9066>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_15_ of module DFFRHQX1 <./square_root_finder.sdf, line 9067>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.low_reg_16_ of module DFFRHQX1 <./square_root_finder.sdf, line 9087>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_16_ of module DFFRHQX1 <./square_root_finder.sdf, line 9088>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.low_reg_17_ of module DFFRHQX1 <./square_root_finder.sdf, line 9108>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_17_ of module DFFRHQX1 <./square_root_finder.sdf, line 9109>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.low_reg_18_ of module DFFRHQX1 <./square_root_finder.sdf, line 9129>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_18_ of module DFFRHQX1 <./square_root_finder.sdf, line 9130>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.low_reg_11_ of module DFFRHQX1 <./square_root_finder.sdf, line 9150>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_11_ of module DFFRHQX1 <./square_root_finder.sdf, line 9151>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.low_reg_12_ of module DFFRHQX1 <./square_root_finder.sdf, line 9171>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_12_ of module DFFRHQX1 <./square_root_finder.sdf, line 9172>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.low_reg_13_ of module DFFRHQX1 <./square_root_finder.sdf, line 9192>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_13_ of module DFFRHQX1 <./square_root_finder.sdf, line 9193>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.low_reg_14_ of module DFFRHQX1 <./square_root_finder.sdf, line 9213>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_14_ of module DFFRHQX1 <./square_root_finder.sdf, line 9214>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.low_reg_9_ of module DFFRHQX1 <./square_root_finder.sdf, line 9234>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_9_ of module DFFRHQX1 <./square_root_finder.sdf, line 9235>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.low_reg_10_ of module DFFRHQX1 <./square_root_finder.sdf, line 9255>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_10_ of module DFFRHQX1 <./square_root_finder.sdf, line 9256>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.g_reg_13_ of module DFFRHQX1 <./square_root_finder.sdf, line 9276>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_13_ of module DFFRHQX1 <./square_root_finder.sdf, line 9277>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.g_reg_14_ of module DFFRHQX1 <./square_root_finder.sdf, line 9333>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_14_ of module DFFRHQX1 <./square_root_finder.sdf, line 9334>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.g_reg_15_ of module DFFRHQX1 <./square_root_finder.sdf, line 9440>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_15_ of module DFFRHQX1 <./square_root_finder.sdf, line 9441>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.g_reg_16_ of module DFFRHQX1 <./square_root_finder.sdf, line 9597>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_16_ of module DFFRHQX1 <./square_root_finder.sdf, line 9598>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.g_reg_17_ of module DFFRHQX1 <./square_root_finder.sdf, line 9804>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_17_ of module DFFRHQX1 <./square_root_finder.sdf, line 9805>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.g_reg_18_ of module DFFRHQX1 <./square_root_finder.sdf, line 9961>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_18_ of module DFFRHQX1 <./square_root_finder.sdf, line 9962>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.g_reg_19_ of module DFFRHQX1 <./square_root_finder.sdf, line 10068>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_19_ of module DFFRHQX1 <./square_root_finder.sdf, line 10069>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.g_reg_20_ of module DFFRHQX1 <./square_root_finder.sdf, line 10125>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_20_ of module DFFRHQX1 <./square_root_finder.sdf, line 10126>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.g_reg_21_ of module DFFRHQX1 <./square_root_finder.sdf, line 10182>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_21_ of module DFFRHQX1 <./square_root_finder.sdf, line 10183>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.g_reg_6_ of module DFFRHQX1 <./square_root_finder.sdf, line 10239>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_6_ of module DFFRHQX1 <./square_root_finder.sdf, line 10240>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.g_reg_9_ of module DFFRHQX1 <./square_root_finder.sdf, line 10755>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_9_ of module DFFRHQX1 <./square_root_finder.sdf, line 10756>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.g_reg_10_ of module DFFRHQX1 <./square_root_finder.sdf, line 11312>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_10_ of module DFFRHQX1 <./square_root_finder.sdf, line 11313>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.g_reg_11_ of module DFFRHQX1 <./square_root_finder.sdf, line 11928>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_11_ of module DFFRHQX1 <./square_root_finder.sdf, line 11929>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3248)) of instance testbench.square_root_finder1.g_reg_12_ of module DFFRHQX1 <./square_root_finder.sdf, line 12535>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_12_ of module DFFRHQX1 <./square_root_finder.sdf, line 12536>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.1826)) of instance testbench.square_root_finder1.state_reg_1_ of module DFFRXL <./square_root_finder.sdf, line 13142>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.state_reg_1_ of module DFFRXL <./square_root_finder.sdf, line 13143>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3125)) of instance testbench.square_root_finder1.up_reg_30_ of module DFFRHQX1 <./square_root_finder.sdf, line 13458>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_30_ of module DFFRHQX1 <./square_root_finder.sdf, line 13459>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.up_reg_28_ of module DFFRHQX1 <./square_root_finder.sdf, line 13479>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_28_ of module DFFRHQX1 <./square_root_finder.sdf, line 13480>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.up_reg_29_ of module DFFRHQX1 <./square_root_finder.sdf, line 13500>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_29_ of module DFFRHQX1 <./square_root_finder.sdf, line 13501>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3125)) of instance testbench.square_root_finder1.low_reg_30_ of module DFFRHQX1 <./square_root_finder.sdf, line 13521>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_30_ of module DFFRHQX1 <./square_root_finder.sdf, line 13522>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3125)) of instance testbench.square_root_finder1.low_reg_28_ of module DFFRHQX1 <./square_root_finder.sdf, line 13542>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_28_ of module DFFRHQX1 <./square_root_finder.sdf, line 13543>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3125)) of instance testbench.square_root_finder1.low_reg_29_ of module DFFRHQX1 <./square_root_finder.sdf, line 13563>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_29_ of module DFFRHQX1 <./square_root_finder.sdf, line 13564>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.up_reg_24_ of module DFFRHQX1 <./square_root_finder.sdf, line 13584>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_24_ of module DFFRHQX1 <./square_root_finder.sdf, line 13585>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.up_reg_25_ of module DFFRHQX1 <./square_root_finder.sdf, line 13605>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_25_ of module DFFRHQX1 <./square_root_finder.sdf, line 13606>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.up_reg_26_ of module DFFRHQX1 <./square_root_finder.sdf, line 13626>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_26_ of module DFFRHQX1 <./square_root_finder.sdf, line 13627>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.up_reg_27_ of module DFFRHQX1 <./square_root_finder.sdf, line 13647>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_27_ of module DFFRHQX1 <./square_root_finder.sdf, line 13648>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.low_reg_25_ of module DFFRHQX1 <./square_root_finder.sdf, line 13668>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_25_ of module DFFRHQX1 <./square_root_finder.sdf, line 13669>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.low_reg_26_ of module DFFRHQX1 <./square_root_finder.sdf, line 13689>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_26_ of module DFFRHQX1 <./square_root_finder.sdf, line 13690>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.low_reg_27_ of module DFFRHQX1 <./square_root_finder.sdf, line 13710>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_27_ of module DFFRHQX1 <./square_root_finder.sdf, line 13711>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.up_reg_22_ of module DFFRHQX1 <./square_root_finder.sdf, line 13731>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_22_ of module DFFRHQX1 <./square_root_finder.sdf, line 13732>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.up_reg_23_ of module DFFRHQX1 <./square_root_finder.sdf, line 13752>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_23_ of module DFFRHQX1 <./square_root_finder.sdf, line 13753>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.low_reg_22_ of module DFFRHQX1 <./square_root_finder.sdf, line 13773>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_22_ of module DFFRHQX1 <./square_root_finder.sdf, line 13774>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.low_reg_23_ of module DFFRHQX1 <./square_root_finder.sdf, line 13794>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_23_ of module DFFRHQX1 <./square_root_finder.sdf, line 13795>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.low_reg_7_ of module DFFRHQX1 <./square_root_finder.sdf, line 13815>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_7_ of module DFFRHQX1 <./square_root_finder.sdf, line 13816>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.low_reg_8_ of module DFFRHQX1 <./square_root_finder.sdf, line 13836>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_8_ of module DFFRHQX1 <./square_root_finder.sdf, line 13837>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.up_reg_3_ of module DFFRHQX1 <./square_root_finder.sdf, line 13857>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_3_ of module DFFRHQX1 <./square_root_finder.sdf, line 13858>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.up_reg_4_ of module DFFRHQX1 <./square_root_finder.sdf, line 13878>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_4_ of module DFFRHQX1 <./square_root_finder.sdf, line 13879>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.up_reg_5_ of module DFFRHQX1 <./square_root_finder.sdf, line 13899>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_5_ of module DFFRHQX1 <./square_root_finder.sdf, line 13900>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.low_reg_2_ of module DFFRHQX1 <./square_root_finder.sdf, line 13920>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_2_ of module DFFRHQX1 <./square_root_finder.sdf, line 13921>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.low_reg_3_ of module DFFRHQX1 <./square_root_finder.sdf, line 13941>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_3_ of module DFFRHQX1 <./square_root_finder.sdf, line 13942>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.low_reg_4_ of module DFFRHQX1 <./square_root_finder.sdf, line 13962>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_4_ of module DFFRHQX1 <./square_root_finder.sdf, line 13963>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.low_reg_5_ of module DFFRHQX1 <./square_root_finder.sdf, line 13983>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_5_ of module DFFRHQX1 <./square_root_finder.sdf, line 13984>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.low_reg_6_ of module DFFRHQX1 <./square_root_finder.sdf, line 14004>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_6_ of module DFFRHQX1 <./square_root_finder.sdf, line 14005>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.low_reg_0_ of module DFFRHQX1 <./square_root_finder.sdf, line 14037>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_0_ of module DFFRHQX1 <./square_root_finder.sdf, line 14038>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.up_reg_0_ of module DFFRHQX1 <./square_root_finder.sdf, line 14058>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_0_ of module DFFRHQX1 <./square_root_finder.sdf, line 14059>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.up_reg_1_ of module DFFRHQX1 <./square_root_finder.sdf, line 14079>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_1_ of module DFFRHQX1 <./square_root_finder.sdf, line 14080>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.up_reg_2_ of module DFFRHQX1 <./square_root_finder.sdf, line 14100>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_2_ of module DFFRHQX1 <./square_root_finder.sdf, line 14101>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.low_reg_1_ of module DFFRHQX1 <./square_root_finder.sdf, line 14121>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.low_reg_1_ of module DFFRHQX1 <./square_root_finder.sdf, line 14122>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3125)) of instance testbench.square_root_finder1.g_reg_30_ of module DFFRHQX1 <./square_root_finder.sdf, line 14142>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_30_ of module DFFRHQX1 <./square_root_finder.sdf, line 14143>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.g_reg_24_ of module DFFRHQX1 <./square_root_finder.sdf, line 14205>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_24_ of module DFFRHQX1 <./square_root_finder.sdf, line 14206>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.g_reg_25_ of module DFFRHQX1 <./square_root_finder.sdf, line 14336>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_25_ of module DFFRHQX1 <./square_root_finder.sdf, line 14337>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3125)) of instance testbench.square_root_finder1.g_reg_26_ of module DFFRHQX1 <./square_root_finder.sdf, line 14467>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_26_ of module DFFRHQX1 <./square_root_finder.sdf, line 14468>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3125)) of instance testbench.square_root_finder1.g_reg_27_ of module DFFRHQX1 <./square_root_finder.sdf, line 14530>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_27_ of module DFFRHQX1 <./square_root_finder.sdf, line 14531>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3125)) of instance testbench.square_root_finder1.g_reg_28_ of module DFFRHQX1 <./square_root_finder.sdf, line 14593>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_28_ of module DFFRHQX1 <./square_root_finder.sdf, line 14594>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3125)) of instance testbench.square_root_finder1.g_reg_29_ of module DFFRHQX1 <./square_root_finder.sdf, line 14656>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_29_ of module DFFRHQX1 <./square_root_finder.sdf, line 14657>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.g_reg_22_ of module DFFRHQX1 <./square_root_finder.sdf, line 14719>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_22_ of module DFFRHQX1 <./square_root_finder.sdf, line 14720>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.g_reg_23_ of module DFFRHQX1 <./square_root_finder.sdf, line 14900>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_23_ of module DFFRHQX1 <./square_root_finder.sdf, line 14901>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.g_reg_7_ of module DFFRHQX1 <./square_root_finder.sdf, line 15031>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_7_ of module DFFRHQX1 <./square_root_finder.sdf, line 15032>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3126)) of instance testbench.square_root_finder1.g_reg_8_ of module DFFRHQX1 <./square_root_finder.sdf, line 15977>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_8_ of module DFFRHQX1 <./square_root_finder.sdf, line 15978>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2763)) of instance testbench.square_root_finder1.g_reg_0_ of module DFFRHQX4 <./square_root_finder.sdf, line 16914>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_0_ of module DFFRHQX4 <./square_root_finder.sdf, line 16915>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2762)) of instance testbench.square_root_finder1.g_reg_1_ of module DFFRHQX4 <./square_root_finder.sdf, line 18310>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_1_ of module DFFRHQX4 <./square_root_finder.sdf, line 18311>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2762)) of instance testbench.square_root_finder1.g_reg_2_ of module DFFRHQX4 <./square_root_finder.sdf, line 21642>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_2_ of module DFFRHQX4 <./square_root_finder.sdf, line 21643>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.g_reg_3_ of module DFFRHQX1 <./square_root_finder.sdf, line 25336>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_3_ of module DFFRHQX1 <./square_root_finder.sdf, line 25337>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.g_reg_4_ of module DFFRHQX1 <./square_root_finder.sdf, line 29021>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_4_ of module DFFRHQX1 <./square_root_finder.sdf, line 29022>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.3127)) of instance testbench.square_root_finder1.g_reg_5_ of module DFFRHQX1 <./square_root_finder.sdf, line 32688>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.g_reg_5_ of module DFFRHQX1 <./square_root_finder.sdf, line 32689>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.1319)) of instance testbench.square_root_finder1.up_reg_14_ of module DFFSRHQX1 <./square_root_finder.sdf, line 67782>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1563)) of instance testbench.square_root_finder1.up_reg_14_ of module DFFSRHQX1 <./square_root_finder.sdf, line 67783>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2243)) of instance testbench.square_root_finder1.up_reg_14_ of module DFFSRHQX1 <./square_root_finder.sdf, line 67785>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_14_ of module DFFSRHQX1 <./square_root_finder.sdf, line 67786>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.1309)) of instance testbench.square_root_finder1.up_reg_12_ of module DFFSRHQX1 <./square_root_finder.sdf, line 67868>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1567)) of instance testbench.square_root_finder1.up_reg_12_ of module DFFSRHQX1 <./square_root_finder.sdf, line 67869>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2242)) of instance testbench.square_root_finder1.up_reg_12_ of module DFFSRHQX1 <./square_root_finder.sdf, line 67871>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_12_ of module DFFSRHQX1 <./square_root_finder.sdf, line 67872>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.1313)) of instance testbench.square_root_finder1.up_reg_16_ of module DFFSRHQX1 <./square_root_finder.sdf, line 67954>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1565)) of instance testbench.square_root_finder1.up_reg_16_ of module DFFSRHQX1 <./square_root_finder.sdf, line 67955>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2244)) of instance testbench.square_root_finder1.up_reg_16_ of module DFFSRHQX1 <./square_root_finder.sdf, line 67957>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_16_ of module DFFSRHQX1 <./square_root_finder.sdf, line 67958>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.1315)) of instance testbench.square_root_finder1.up_reg_17_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68040>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1565)) of instance testbench.square_root_finder1.up_reg_17_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68041>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.224)) of instance testbench.square_root_finder1.up_reg_17_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68043>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_17_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68044>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.1317)) of instance testbench.square_root_finder1.up_reg_11_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68126>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1564)) of instance testbench.square_root_finder1.up_reg_11_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68127>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2244)) of instance testbench.square_root_finder1.up_reg_11_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68129>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_11_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68130>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.0087)) of instance testbench.square_root_finder1.up_reg_21_ of module DFFSRXL <./square_root_finder.sdf, line 68288>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.2079)) of instance testbench.square_root_finder1.up_reg_21_ of module DFFSRXL <./square_root_finder.sdf, line 68289>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.1246)) of instance testbench.square_root_finder1.up_reg_21_ of module DFFSRXL <./square_root_finder.sdf, line 68291>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_21_ of module DFFSRXL <./square_root_finder.sdf, line 68292>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.1311)) of instance testbench.square_root_finder1.up_reg_10_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68368>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1566)) of instance testbench.square_root_finder1.up_reg_10_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68369>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2243)) of instance testbench.square_root_finder1.up_reg_10_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68371>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_10_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68372>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.131)) of instance testbench.square_root_finder1.up_reg_9_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68454>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1566)) of instance testbench.square_root_finder1.up_reg_9_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68455>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2242)) of instance testbench.square_root_finder1.up_reg_9_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68457>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_9_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68458>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.1318)) of instance testbench.square_root_finder1.up_reg_18_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68540>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1564)) of instance testbench.square_root_finder1.up_reg_18_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68541>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2247)) of instance testbench.square_root_finder1.up_reg_18_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68543>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_18_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68544>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.1318)) of instance testbench.square_root_finder1.up_reg_7_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68626>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1564)) of instance testbench.square_root_finder1.up_reg_7_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68627>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2241)) of instance testbench.square_root_finder1.up_reg_7_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68629>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_7_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68630>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.1319)) of instance testbench.square_root_finder1.up_reg_19_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68712>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1563)) of instance testbench.square_root_finder1.up_reg_19_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68713>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2246)) of instance testbench.square_root_finder1.up_reg_19_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68715>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_19_ of module DFFSRHQX1 <./square_root_finder.sdf, line 68716>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.1313)) of instance testbench.square_root_finder1.up_reg_8_ of module DFFSRHQX1 <./square_root_finder.sdf, line 69360>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1565)) of instance testbench.square_root_finder1.up_reg_8_ of module DFFSRHQX1 <./square_root_finder.sdf, line 69361>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2241)) of instance testbench.square_root_finder1.up_reg_8_ of module DFFSRHQX1 <./square_root_finder.sdf, line 69363>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_8_ of module DFFSRHQX1 <./square_root_finder.sdf, line 69364>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.1318)) of instance testbench.square_root_finder1.up_reg_20_ of module DFFSRHQX1 <./square_root_finder.sdf, line 69446>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1564)) of instance testbench.square_root_finder1.up_reg_20_ of module DFFSRHQX1 <./square_root_finder.sdf, line 69447>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2251)) of instance testbench.square_root_finder1.up_reg_20_ of module DFFSRHQX1 <./square_root_finder.sdf, line 69449>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_20_ of module DFFSRHQX1 <./square_root_finder.sdf, line 69450>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.1343)) of instance testbench.square_root_finder1.up_reg_6_ of module DFFSRHQX1 <./square_root_finder.sdf, line 69532>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1555)) of instance testbench.square_root_finder1.up_reg_6_ of module DFFSRHQX1 <./square_root_finder.sdf, line 69533>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2249)) of instance testbench.square_root_finder1.up_reg_6_ of module DFFSRHQX1 <./square_root_finder.sdf, line 69535>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_6_ of module DFFSRHQX1 <./square_root_finder.sdf, line 69536>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.1315)) of instance testbench.square_root_finder1.up_reg_15_ of module DFFSRHQX1 <./square_root_finder.sdf, line 70885>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1565)) of instance testbench.square_root_finder1.up_reg_15_ of module DFFSRHQX1 <./square_root_finder.sdf, line 70886>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2204)) of instance testbench.square_root_finder1.up_reg_15_ of module DFFSRHQX1 <./square_root_finder.sdf, line 70888>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_15_ of module DFFSRHQX1 <./square_root_finder.sdf, line 70889>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge SN) (posedge CK) (0.1309)) of instance testbench.square_root_finder1.up_reg_13_ of module DFFSRHQX1 <./square_root_finder.sdf, line 70942>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge SN) (posedge CK) (0.1567)) of instance testbench.square_root_finder1.up_reg_13_ of module DFFSRHQX1 <./square_root_finder.sdf, line 70943>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECOVERY (posedge RN) (posedge CK) (0.2207)) of instance testbench.square_root_finder1.up_reg_13_ of module DFFSRHQX1 <./square_root_finder.sdf, line 70945>.
+ncelab: *W,SDFNET: Unable to annotate to non-existent timing check (REMOVAL (posedge RN) (posedge CK) (0)) of instance testbench.square_root_finder1.up_reg_13_ of module DFFSRHQX1 <./square_root_finder.sdf, line 70946>.
+	Annotation completed with 0 Errors and 224 Warnings
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.testbench:v <0x711a5335>
+			streams:   3, words:  3045
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:               3558      72
+		UDPs:                    96       1
+		Primitives:            9716       8
+		Timing outputs:        4949     123
+		Registers:               99       9
+		Scalar wires:          5058       -
+		Expanded wires:          16       1
+		Always blocks:            1       1
+		Initial blocks:           2       2
+		Cont. assignments:        0       1
+		Timing checks:          944     237
+		Interconnect:          8805     382
+		Simulation timescale:   1ps
+	Writing initial simulation snapshot: worklib.testbench:v
+Loading snapshot worklib.testbench:v .................... Done
+*Novas* Loading libsscore_ius111.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+Novas FSDB Dumper for IUS, Release 2012.01, Linux, 01/13/2012
+Copyright (C) 1996 - 2012 by SpringSoft, Inc.
+***********************************************************************
+*  WARNING -                                                          *
+*  The FSDB dumper support is still in beta stage for the simulator   *
+*  version that you are running. For any abnormal behavior, please    *
+*  contact SpringSoft support at support@springsoft.com for           *
+*  assistance.                                                        *
+***********************************************************************
+*Novas* : Create FSDB file 'square_root_finder_syn.fsdb'
+*Novas* : Begin traversing the scopes, layer (0).
+*Novas* : End of traversing.
+Simulation complete via $finish(1) at time 4970 NS + 0
+./testbench.v:28     #1500 $finish;
+ncsim> exit
+TOOL:	ncverilog	11.10-s072: Exiting on May 26, 2016 at 21:06:45 CST  (total: 00:00:34)

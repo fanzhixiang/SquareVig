@@ -1,0 +1,9 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+testbench.v
+square_root_finder_sim.v
+-v
+/home/m103/m103061630/lab/T18/Verilog/tsmc18.v
++access+r
