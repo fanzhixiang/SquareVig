@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-`define CLK 25
+`define CLK 21.1
 
 module testbench;
 
@@ -14,9 +14,9 @@ always begin #(`CLK/2) clk = ~ clk; end
 
 initial begin
     clk = 1'b0;
-    rst = 1'b1;
+    rst = 1'b0;
     in =  16'd0;
-    #170 in = 16'd3; rst = 1'b0;
+    #170 in = 16'd3; rst = 1'b1;
     #100 rst = 1'b1;
 
     #1500 in = 16'd7; rst = 1'b0;

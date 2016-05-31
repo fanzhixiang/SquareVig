@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-`define CLK 22
+`define CLK 21.6
 
 module testbench;
 
